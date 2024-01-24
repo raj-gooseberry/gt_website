@@ -41,32 +41,25 @@ import gasImg from '~/assets/images/gas.jpg';
 export const heroHome: HeroProps = {
   title: (
     <>
-      NextJs Website for GT for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
-      <span className="sm:whitespace-nowrap">Tailwind CSS</span>
+      Innovate.<span className="hidden md:inline">Elevate.</span><span>Dominate</span>
     </>
   ),
   subtitle: (
     <>
       <span className="hidden md:inline">
-        <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
-          GTwebsite
-        </span>{' '}
-        is a production ready template to start your new website using <em>Next.js</em> + <em>Tailwind CSS</em>.
-      </span>{' '}
-      It has been designed following Best Practices, SEO, Accessibility, Dark Mode, great Page Speed, image
-      optimization.
+        <span className="font-semibold ">Gooseberry Technovision is a dynamic and innovative technology service company dedicated to providing cutting-edge solutions to businesses of all sizes.With a focus on excellence and innovation,we offer a comprehensive range of tech services designed to optimize operations, enhance efficiency, and drive growth.</span></span>
     </>
   ),
-  callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/gtwebwork/GTwebsite',
-    icon: IconDownload,
-    targetBlank: true,
-  },
-  callToAction2: {
-    text: 'Learn more',
-    href: '/',
-  },
+  // callToAction: {
+  //   text: 'Get template',
+  //   href: 'https://github.com/gtwebwork/GTwebsite',
+  //   icon: IconDownload,
+  //   targetBlank: true,
+  // },
+    callToAction2: {
+      text: 'Learn more',
+      href: '/',
+    },
   image: {
     src: heroImg,
     alt: 'Hero GTwebsite',
@@ -109,7 +102,7 @@ export const featuresHome: FeaturesProps = {
   header: {
     title: (
       <>
-        What you get with <span className="whitespace-nowrap">GTwebsite</span>
+        What you get with <span className="whitespace-nowrap">Gooseberry Technovision</span>
       </>
     ),
     subtitle:
@@ -118,9 +111,9 @@ export const featuresHome: FeaturesProps = {
   },
   items: [
     {
-      title: 'Next.Js + Tailwind CSS Integration',
+      title: 'Web Devolopement',
       description:
-        'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+        'Drive success online with our top-notch web development services, crafting websites that captivate and convert',
       icon: IconBrandTailwind,
       callToAction: {
         text: 'Discover now',
@@ -128,9 +121,9 @@ export const featuresHome: FeaturesProps = {
       },
     },
     {
-      title: 'Ready-to-use Components',
+      title: 'Data Science',
       description:
-        'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+        "Transform your data into a valuable asset with our expert data science services, driving efficiency, and delivering measurable results",
       icon: IconComponents,
       callToAction: {
         text: 'Discover now',
@@ -138,9 +131,9 @@ export const featuresHome: FeaturesProps = {
       },
     },
     {
-      title: 'Best Practices',
+      title: 'DevOpps',
       description:
-        'By prioritizing maintainability and scalability through coding standards and design principles, your website stays robust and efficient.',
+      "Streamline your development and operations with cutting-edge DevOps solutions for enhanced efficiency and collaboration.",
       icon: IconListCheck,
       callToAction: {
         text: 'Discover now',
@@ -148,10 +141,20 @@ export const featuresHome: FeaturesProps = {
       },
     },
     {
-      title: 'Excellent Page Speed',
+      title: 'Software Testing',
       description:
-        'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+        "Unlock the potential of your software with comprehensive testing strategies that guarantee top-tier quality and performance.",
       icon: IconRocket,
+      callToAction: {
+        text: 'Discover now',
+        href: '/',
+      },
+    },
+    {
+      title: 'A.I',
+      description:
+      "Explore transformative A.I. capabilities that drive productivity and success, harnessing the potential of artificial intelligence for unparalleled results.",
+      icon: IconBulb,
       callToAction: {
         text: 'Discover now',
         href: '/',
@@ -167,16 +170,7 @@ export const featuresHome: FeaturesProps = {
         href: '/',
       },
     },
-    {
-      title: 'Open to new ideas and contributions',
-      description:
-        'We welcome new ideas and contributions to our platform. Whether you have feature suggestions, want to contribute code, or share insights, our platform is open for collaboration.',
-      icon: IconBulb,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
-    },
+    
   ],
 };
 
