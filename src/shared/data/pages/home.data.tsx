@@ -179,28 +179,29 @@ export const contentHomeOne: ContentProps = {
   id: 'contentOne-on-home-one',
   hasBackground: true,
   header: {
-    title: 'Aliquip definiebas ad est',
-    subtitle: 'Quando cetero his ne, eum admodum sapientem ut',
-    tagline: 'Content',
+    title: "Revolutionize Your Business with Gooseberry technovision - Your Premier IT Services Partner!",
+    subtitle: "🌐 Discover Our Comprehensive IT Services",
+    // tagline: 'Content',
   },
   content:
-    'Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.',
+    "As a dynamic IT services provider, we offer a suite of solutions tailored to meet the unique needs of your organization.",
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Managed IT Services',
       description:
-        'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+        "🛡️ Ensure the seamless operation of your IT infrastructure with our proactive and responsive managed IT services. From 24/7 monitoring to rapid issue resolution, we've got your back",
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Cybersecurity Solutions',
       description:
-        'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+       "🔐 Safeguard your digital assets with our robust cybersecurity services. Our experts employ the latest strategies and technologies to protect your business from evolving cyber threats.",
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Cloud Computing',
       description:
-        'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+        "☁️ Unlock the power of the cloud with our scalable and secure cloud computing solutions. Seamlessly migrate, optimize, and manage your data for enhanced flexibility and efficiency.",
     },
+    
   ],
   image: {
     src: cameraFrontImg,
@@ -214,26 +215,23 @@ export const contentHomeOne: ContentProps = {
 export const contentHomeTwo: ContentProps = {
   id: 'contentOne-on-home-two',
   hasBackground: true,
-  content:
-    'Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te latine theophrastus. Ea his tale nib dissentias, mei exerci tamquam euripidis cu.',
+  // content:
+  //   'Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te latine theophrastus. Ea his tale nib dissentias, mei exerci tamquam euripidis cu.',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'IT Consulting',
+      description:
+        "🌐 Leverage our seasoned IT consultants to devise a strategic roadmap for your digital transformation. We analyze, plan, and implement solutions that align with your business goals.",
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Network Infrastructure',
+      description:
+        "🌐 Build a strong foundation for your digital success with our network infrastructure services. From design to implementation, we ensure a robust and high-performance network tailored to your needs.",
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
-    },
-    {
-      title: 'Per ei quaeque sensibus',
-    },
-    {
-      title: 'Cu imperdiet posidonium sed',
-    },
-    {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Data Analytics',
+      description:
+        "📊 Harness the potential of your data with our advanced analytics services. Gain valuable insights, make informed decisions, and drive your business forward in the data-driven era.",
     },
   ],
   image: {
@@ -255,29 +253,30 @@ export const stepsHome: StepsProps = {
     alt: 'Steps image',
   },
   header: {
-    title: 'Sed ac magna sit amet risus tristique interdum.',
+    title: '💡 Why Choose Gooseberry Technovision?',
   },
   items: [
     {
-      title: 'Step 1',
+      title: 'Expertise That Matters',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
+        "Benefit from our team of seasoned IT professionals with diverse expertise. We stay ahead of industry trends to provide you with innovative and effective solutions.",
       icon: IconArrowDown,
     },
     {
-      title: 'Step 2',
+      title: 'Customer-Centric Approach',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+        'Your success is our priority. We take the time to understand your business, ensuring our solutions align perfectly with your goals and challenges.',
       icon: IconArrowDown,
     },
     {
-      title: 'Step 3',
+      title: 'Reliability and Scalability',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+        "Count on us for reliable and scalable solutions. Whether you're a startup or a multinational corporation, our services grow with your business.",
       icon: IconArrowDown,
     },
     {
-      title: 'Ready!',
+      title: 'Strategic Partnerships',
+      description:"Gooseberry Technovision is more than a service provider; we're your strategic partner in achieving digital excellence. Together, we navigate the ever-evolving landscape of technology.",
     },
   ],
 };
@@ -360,9 +359,9 @@ export const faqs2Home: FAQsProps = {
   id: 'faqsTwo-on-home',
   hasBackground: false,
   header: {
-    title: 'Frequently Asked Questions',
+    title: '🚀 Transform Your Business Today with us!',
     subtitle:
-      'Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar.',
+      "Ready to embark on a journey of digital transformation? Contact us now for a personalized consultation. Gooseberry Technovision - Your Trusted IT Services Partner for a Future of Innovation and Growth! 🚀✨",
     tagline: 'FAQS',
   },
   items: [
@@ -382,106 +381,106 @@ export const faqs2Home: FAQsProps = {
       title: "What's an example of when you changed your mind?",
       description: `Nunc dapibus lacinia ipsum ut elementum. Integer in pretium sapien. Ut pretium nisl mauris, ut rutrum justo condimentum id. Etiam aliquet, arcu at iaculis laoreet, est arcu egestas sapien, eget sollicitudin odio orci et nunc.`,
     },
-    {
-      title: 'What is something that you would really like to try again?',
-      description: `Duis in maximus mauris, id eleifend mauris. Nam a fringilla arcu. Curabitur convallis, tellus non aliquet rhoncus, lacus massa auctor eros, in interdum lectus augue sed augue. Fusce tempor ex id faucibus efficitur.`,
-    },
-    {
-      title: 'If you could only ask one question to each person you meet, what would that question be?',
-      description: `Nullam imperdiet sapien tincidunt erat dapibus faucibus. Vestibulum a sem nec lorem imperdiet scelerisque non sed lacus. Ut pulvinar id diam vitae auctor. Nam tempus, neque et elementum consectetur, ex ipsum pulvinar risus, vel sodales ligula tortor eu eros.`,
-    },
+    // {
+    //   title: 'What is something that you would really like to try again?',
+    //   description: `Duis in maximus mauris, id eleifend mauris. Nam a fringilla arcu. Curabitur convallis, tellus non aliquet rhoncus, lacus massa auctor eros, in interdum lectus augue sed augue. Fusce tempor ex id faucibus efficitur.`,
+    // },
+    // {
+    //   title: 'If you could only ask one question to each person you meet, what would that question be?',
+    //   description: `Nullam imperdiet sapien tincidunt erat dapibus faucibus. Vestibulum a sem nec lorem imperdiet scelerisque non sed lacus. Ut pulvinar id diam vitae auctor. Nam tempus, neque et elementum consectetur, ex ipsum pulvinar risus, vel sodales ligula tortor eu eros.`,
+    // },
   ],
 };
 
 // Pricing data on Home page *******************
-export const pricingHome: PricingProps = {
-  id: 'pricing-on-home',
-  hasBackground: true,
-  header: {
-    title: 'Prices for each plan',
-    subtitle:
-      'Proin eget vestibulum sem, vel ultrices ligula. Vestibulum in eleifend lectus, non mollis odio. Donec nibh ipsum, suscipit non pulvinar quis, lobortis ac lorem.',
-    // tagline: 'Pricing',
-  },
-  prices: [
-    {
-      title: 'basic',
-      price: 29,
-      period: 'per month',
-      items: [
-        {
-          description: 'Etiam in libero, et volutpat',
-        },
-        {
-          description: 'Aenean ac nunc dolor tristique',
-        },
-        {
-          description: 'Cras scelerisque accumsan lib',
-        },
-        {
-          description: 'In hac habitasse',
-        },
-      ],
-      callToAction: {
-        targetBlank: true,
-        text: 'Free 7-day trial',
-        href: '/',
-      },
-      hasRibbon: false,
-    },
-    {
-      title: 'standard',
-      price: 69,
-      period: 'per month',
-      items: [
-        {
-          description: 'Proin vel laoreet',
-        },
-        {
-          description: 'Ut efficitur egestas',
-        },
-        {
-          description: 'Pellentesque ut nibh',
-        },
-        {
-          description: 'Donec fringilla sem',
-        },
-      ],
-      callToAction: {
-        targetBlank: true,
-        text: 'Free 15-day trial',
-        href: '/',
-      },
-      hasRibbon: true,
-      ribbonTitle: 'Popular',
-    },
-    {
-      title: 'premium',
-      price: 199,
-      period: 'per month',
-      items: [
-        {
-          description: 'Curabitur suscipit risus',
-        },
-        {
-          description: 'Aliquam blandit malesuada',
-        },
-        {
-          description: 'Suspendisse sit amet',
-        },
-        {
-          description: 'Suspendisse auctor dui',
-        },
-      ],
-      callToAction: {
-        targetBlank: true,
-        text: 'Free 30-day trial',
-        href: '/',
-      },
-      hasRibbon: false,
-    },
-  ],
-};
+// export const pricingHome: PricingProps = {
+//   id: 'pricing-on-home',
+//   hasBackground: true,
+//   header: {
+//     title: 'Prices for each plan',
+//     subtitle:
+//       'Proin eget vestibulum sem, vel ultrices ligula. Vestibulum in eleifend lectus, non mollis odio. Donec nibh ipsum, suscipit non pulvinar quis, lobortis ac lorem.',
+//     // tagline: 'Pricing',
+//   },
+//   prices: [
+//     {
+//       title: 'basic',
+//       price: 29,
+//       period: 'per month',
+//       items: [
+//         {
+//           description: 'Etiam in libero, et volutpat',
+//         },
+//         {
+//           description: 'Aenean ac nunc dolor tristique',
+//         },
+//         {
+//           description: 'Cras scelerisque accumsan lib',
+//         },
+//         {
+//           description: 'In hac habitasse',
+//         },
+//       ],
+//       callToAction: {
+//         targetBlank: true,
+//         text: 'Free 7-day trial',
+//         href: '/',
+//       },
+//       hasRibbon: false,
+//     },
+//     {
+//       title: 'standard',
+//       price: 69,
+//       period: 'per month',
+//       items: [
+//         {
+//           description: 'Proin vel laoreet',
+//         },
+//         {
+//           description: 'Ut efficitur egestas',
+//         },
+//         {
+//           description: 'Pellentesque ut nibh',
+//         },
+//         {
+//           description: 'Donec fringilla sem',
+//         },
+//       ],
+//       callToAction: {
+//         targetBlank: true,
+//         text: 'Free 15-day trial',
+//         href: '/',
+//       },
+//       hasRibbon: true,
+//       ribbonTitle: 'Popular',
+//     },
+//     {
+//       title: 'premium',
+//       price: 199,
+//       period: 'per month',
+//       items: [
+//         {
+//           description: 'Curabitur suscipit risus',
+//         },
+//         {
+//           description: 'Aliquam blandit malesuada',
+//         },
+//         {
+//           description: 'Suspendisse sit amet',
+//         },
+//         {
+//           description: 'Suspendisse auctor dui',
+//         },
+//       ],
+//       callToAction: {
+//         targetBlank: true,
+//         text: 'Free 30-day trial',
+//         href: '/',
+//       },
+//       hasRibbon: false,
+//     },
+//   ],
+// };
 
 // Team data on Home page *******************
 export const teamHome: TeamProps = {
