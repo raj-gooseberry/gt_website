@@ -366,29 +366,31 @@ export const faqs2Home: FAQsProps = {
   },
   items: [
     {
-      title: 'What do I need to start?',
-      description: `Nunc mollis tempor quam, non fringilla elit sagittis in. Nullam vitae consectetur mi, a elementum arcu. Sed laoreet, ipsum et vehicula dignissim, leo orci pretium sem, ac condimentum tellus est quis ligula.`,
+      title: 'What services does Gooseberry Technovision offer?',
+      description: `Gooseberry Technovision empowers businesses with cutting-edge IT solutions, from managed services and cybersecurity to cloud strategies and data analytics.`,
     },
     {
-      title: 'How to install the NextJS + Tailwind CSS template?',
-      description: `Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eleifend vestibulum nisl in iaculis. Mauris dictum ac purus vestibulum auctor. Praesent imperdiet lectus et massa faucibus, quis viverra massa rhoncus.`,
+      title: 'What makes Gooseberry Technovision different from other IT service providers?',
+      description: `
+      Gooseberry Technovision stands out in the IT service landscape by offering a potent blend of proactive expertise, customized solutions, and unwavering commitment to your success.`,
     },
     {
-      title: "What's something that you completely don't understand?",
-      description: `Mauris vitae eros a dui varius luctus. Suspendisse rutrum, sapien nec blandit bibendum, justo sapien sollicitudin erat, id aliquam sapien purus quis leo. Aliquam vulputate vestibulum consectetur.`,
+      title: "How do you migrate my data to the cloud?",
+      description: `Gooseberry Technovision seamlessly transfers your data using secure tools, minimizing downtime and ensuring smooth integration into your cloud environment.`,
     },
     {
       title: "What's an example of when you changed your mind?",
       description: `Nunc dapibus lacinia ipsum ut elementum. Integer in pretium sapien. Ut pretium nisl mauris, ut rutrum justo condimentum id. Etiam aliquet, arcu at iaculis laoreet, est arcu egestas sapien, eget sollicitudin odio orci et nunc.`,
     },
-    // {
-    //   title: 'What is something that you would really like to try again?',
-    //   description: `Duis in maximus mauris, id eleifend mauris. Nam a fringilla arcu. Curabitur convallis, tellus non aliquet rhoncus, lacus massa auctor eros, in interdum lectus augue sed augue. Fusce tempor ex id faucibus efficitur.`,
-    // },
-    // {
-    //   title: 'If you could only ask one question to each person you meet, what would that question be?',
-    //   description: `Nullam imperdiet sapien tincidunt erat dapibus faucibus. Vestibulum a sem nec lorem imperdiet scelerisque non sed lacus. Ut pulvinar id diam vitae auctor. Nam tempus, neque et elementum consectetur, ex ipsum pulvinar risus, vel sodales ligula tortor eu eros.`,
-    // },
+    {
+      title: 'What data analytics services do you offer?',
+      description: `
+      We unlock hidden insights from your data through expert analysis, helping you make smarter decisions with our data visualization and actionable reports.`,
+    },
+    {
+      title: 'What network infrastructure services do you offer?',
+      description: `We design, build, and manage secure, scalable network infrastructure that empowers your business, from robust wired systems to seamless wireless solutions. Think rock-solid foundations for your digital world.`,
+    },
   ],
 };
 
@@ -601,11 +603,11 @@ export const contactHome: ContactProps = {
   hasBackground: true,
   header: {
     title: 'Get in Touch',
-    subtitle: 'In hac habitasse platea dictumst',
-    tagline: 'Contact',
+    subtitle: `🚀 Transform Your Business Today with Gooseberry Technovision!`,
+    // tagline: 'Contact',
   },
   content:
-    'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.',
+    "Ready to take the leap into the future of digital innovation? Contact us now for a personalized consultation. Gooseberry Technovision - Your Trusted IT Services Partner, Driving Innovation, and Powering Growth! 🚀✨",
   items: [
     {
       title: 'Our Address',
@@ -653,42 +655,42 @@ export const contactHome: ContactProps = {
 };
 
 // CallToAction data *******************
-export const callToAction2Home: CallToActionProps = {
-  title: 'Next.js + Tailwind CSS',
-  subtitle:
-    'Aliquam sodales porttitor lacus ac tristique. Etiam posuere elit at leo feugiat sodales. Sed ac mauris quis sem tempor condimentum non at metus.',
-  callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/gtwebwork/GTwebsite',
-    icon: IconDownload,
-  },
-  items: [
-    {
-      title: 'Get template',
-      description: 'Aliquam sodales est lectus, quis.',
-      href: 'https://github.com/gtwebwork/GTwebsite',
-    },
-    {
-      title: 'Learn more',
-      description: 'Class aptent taciti sociosqu ad litora torquent per conubia.',
-      href: '/',
-    },
-    {
-      title: 'Subscribe',
-      description: 'Morbi orci nunc, euismod ac dui id, convallis.',
-      form: {
-        icon: IconMail,
-        input: {
-          type: 'email',
-          name: 'email',
-          autocomplete: 'email',
-          placeholder: 'Enter your email address',
-        },
-        btn: {
-          title: 'Subscribe',
-          type: 'submit',
-        },
-      },
-    },
-  ],
-};
+// export const callToAction2Home: CallToActionProps = {
+//   title: 'Next.js + Tailwind CSS',
+//   subtitle:
+//     'Aliquam sodales porttitor lacus ac tristique. Etiam posuere elit at leo feugiat sodales. Sed ac mauris quis sem tempor condimentum non at metus.',
+//   callToAction: {
+//     text: 'Get template',
+//     href: 'https://github.com/gtwebwork/GTwebsite',
+//     icon: IconDownload,
+//   },
+//   items: [
+//     {
+//       title: 'Get template',
+//       description: 'Aliquam sodales est lectus, quis.',
+//       href: 'https://github.com/gtwebwork/GTwebsite',
+//     },
+//     {
+//       title: 'Learn more',
+//       description: 'Class aptent taciti sociosqu ad litora torquent per conubia.',
+//       href: '/',
+//     },
+//     {
+//       title: 'Subscribe',
+//       description: 'Morbi orci nunc, euismod ac dui id, convallis.',
+//       form: {
+//         icon: IconMail,
+//         input: {
+//           type: 'email',
+//           name: 'email',
+//           autocomplete: 'email',
+//           placeholder: 'Enter your email address',
+//         },
+//         btn: {
+//           title: 'Subscribe',
+//           type: 'submit',
+//         },
+//       },
+//     },
+//   ],
+// };
