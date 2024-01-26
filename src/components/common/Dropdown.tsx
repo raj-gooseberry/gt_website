@@ -31,7 +31,7 @@ const Dropdown = ({ options, activeTab, onActiveTabSelected, iconUp, iconDown }:
   });
 
   return (
-    <div className="relative mt-4 rounded-md border border-gray-400 text-left">
+    <div className="relative mt-4 rounded-md border border-dark-400 text-left">
       <div onClick={dropdownHandler} className="flex select-none items-center justify-between rounded-md p-3">
         <div className="text-lg">{selectedOption}</div>
         {iconDown && iconUp ? (
@@ -41,18 +41,18 @@ const Dropdown = ({ options, activeTab, onActiveTabSelected, iconUp, iconDown }:
             iconUp
           )
         ) : isDropdownOpen === false ? (
-          <IconChevronDown className="h-6 w-6 text-primary-600 dark:text-slate-200" />
+          <IconChevronDown className="h-6 w-6 text-primary-600 dark:text-dark-200" />
         ) : (
-          <IconChevronUp className="h-6 w-6 text-primary-600 dark:text-slate-200" />
+          <IconChevronUp className="h-6 w-6 text-primary-600 dark:text-dark-200" />
         )}
       </div>
       {isDropdownOpen && (
-        <div className="absolute w-full translate-y-1 overflow-auto rounded-md border border-gray-400">
+        <div className="absolute w-full translate-y-1 overflow-auto rounded-md border border-dark-400">
           {options.map((option: Tab, index) => (
             <div
               key={`option-${index}`}
               onClick={() => onOptionSelected(option, index)}
-              className={`flex cursor-pointer items-center bg-white p-3 text-lg dark:bg-slate-900 ${
+              className={`flex cursor-pointer items-center bg-tertiary-100 p-3 text-lg dark:bg-dark-900 ${
                 activeTab !== index ? 'pl-10' : 'text-primary-600 dark:text-primary-200'
               }`}
             >

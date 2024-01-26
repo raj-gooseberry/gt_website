@@ -25,23 +25,23 @@ const Content = ({
     <div className="mx-auto max-w-7xl">
       <div className={`md:flex ${isReversed ? 'md:flex-row-reverse' : ''} md:gap-16`}>
         <div className="self-center md:basis-1/2">
-          {content && <div className="mb-8 lg:mb-12 text-lg text-gray-600 dark:text-slate-400">{content}</div>}
+          {content && <div className="mb-8 lg:mb-12 text-lg text-dark-600 dark:text-dark-400">{content}</div>}
           <ItemGrid
             items={items}
             columns={1}
             defaultIcon={IconCheck}
             containerClass="gap-4 md:gap-y-6"
             panelClass="flex max-w-full"
-            titleClass="text-lg font-medium leading-6 text-gray-900 dark:text-white mt-1 mb-2"
-            descriptionClass="mt-1 text-gray-600 dark:text-slate-400"
-            iconClass="flex-shrink-0 w-7 h-7 flex items-center justify-center rounded-full bg-primary-900 text-gray-50 mr-4 mt-1 p-1"
+            titleClass="text-lg font-medium leading-6 text-dark-900 dark:text-tertiary-100 mt-1 mb-2"
+            descriptionClass="mt-1 text-dark-600 dark:text-dark-400"
+            iconClass="flex-shrink-0 w-7 h-7 flex items-center justify-center rounded-full bg-primary-900 text-dark-50 mr-4 mt-1 p-1"
           />
         </div>
         <div aria-hidden="true" className="mt-10 md:mt-0 md:basis-1/2">
           {image && (
             <div className="relative m-auto max-w-md">
               <Image
-                className="mx-auto w-full rounded-lg shadow-lg bg-gray-400 dark:bg-slate-700"
+                className="mx-auto w-full rounded-lg shadow-lg bg-dark-400 dark:bg-dark-700"
                 src={image.src}
                 width={828}
                 height={828}

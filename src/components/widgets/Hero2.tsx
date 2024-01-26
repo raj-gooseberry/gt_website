@@ -4,7 +4,7 @@ import CTA from '../common/CTA';
 
 const Hero2 = ({ title, subtitle, tagline, callToAction, image }: HeroProps) => {
   return (
-    <section className="bg-primary-50 dark:bg-slate-800" id="heroTwo">
+    <section className="bg-primary-100 dark:bg-dark-800" id="heroTwo">
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:flex md:h-screen 2xl:h-auto">
         <div className="block py-12 md:flex md:py-12 text-left lg:py-16">
           <div className="mx-auto flex max-w-5xl basis-[56%] items-center">
@@ -20,7 +20,7 @@ const Hero2 = ({ title, subtitle, tagline, callToAction, image }: HeroProps) => 
                 </h1>
               )}
               <div className="mx-auto max-w-3xl">
-                {subtitle && <p className="mb-8 text-xl font-normal text-gray-600 dark:text-slate-400">{subtitle}</p>}
+                {subtitle && <p className="mb-8 text-xl font-normal text-dark-600 dark:text-dark-400">{subtitle}</p>}
                 <div className="flex max-w-none flex-col flex-nowrap gap-4 sm:flex-row md:m-0 justify-start">
                   {callToAction && <CTA callToAction={callToAction} />}
                 </div>
@@ -31,7 +31,7 @@ const Hero2 = ({ title, subtitle, tagline, callToAction, image }: HeroProps) => 
             <div className="relative m-auto h-full max-w-4xl object-cover">
               {image && (
                 <Image
-                  className="mx-auto h-full w-auto rounded-md bg-gray-400 object-cover drop-shadow-2xl dark:bg-slate-700"
+                  className="mx-auto h-full w-auto rounded-md bg-dark-400 object-cover drop-shadow-2xl dark:bg-dark-700"
                   src={image.src}
                   alt={image.alt}
                   width={540}

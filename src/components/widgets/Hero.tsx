@@ -19,7 +19,7 @@ const Hero = ({ title, subtitle, tagline, callToAction, image }: HeroProps) => {
               </h1>
             )}
             <div className="mr-auto max-w-3xl">
-              {subtitle && <p className="mb-6 text-xl font-normal text-gray-600 dark:text-slate-400">{subtitle}</p>}
+              {subtitle && <p className="mb-6 text-xl font-normal text-dark-600 dark:text-dark-400">{subtitle}</p>}
               <div className="flex max-w-none flex-col flex-nowrap gap-4 sm:flex-row sm:justify-left">
                 {callToAction && <CTA callToAction={callToAction} />}
               </div>
@@ -28,7 +28,7 @@ const Hero = ({ title, subtitle, tagline, callToAction, image }: HeroProps) => {
           {image && (
             <div className="relative m-auto max-w-5xl">
               <Image
-                className="mx-auto h-auto w-full rounded-md bg-gray-400 dark:bg-slate-700"
+                className="mx-auto h-auto w-full rounded-md bg-dark-400 dark:bg-dark-700"
                 src={image.src}
                 alt={image.alt}
                 width={1024}
