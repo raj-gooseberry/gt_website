@@ -8,7 +8,7 @@ import {
   IconCheck,
   IconClock,
   IconComponents,
-  IconDownload,
+  IconArrowMoveRight,
   IconListCheck,
   IconMail,
   IconMapPin,
@@ -50,16 +50,12 @@ export const heroHome: HeroProps = {
         <span className="font-semibold ">Gooseberry Technovision is a dynamic and innovative technology service company dedicated to providing cutting-edge solutions to businesses of all sizes.With a focus on excellence and innovation,we offer a comprehensive range of tech services designed to optimize operations, enhance efficiency, and drive growth.</span></span>
     </>
   ),
-  // callToAction: {
-  //   text: 'Get template',
-  //   href: 'https://github.com/gtwebwork/GTwebsite',
-  //   icon: IconDownload,
-  //   targetBlank: true,
-  // },
-    callToAction2: {
-      text: 'Learn more',
-      href: '/',
-    },
+  callToAction: {
+    text: 'Explore more',
+    href: 'https://github.com/gtwebwork/GTwebsite',
+    icon: IconArrowMoveRight,
+    targetBlank: true,
+  },
   image: {
     src: heroImg,
     alt: 'Hero GTwebsite',
@@ -107,7 +103,7 @@ export const featuresHome: FeaturesProps = {
     ),
     subtitle:
       "Elevating Your Digital Presence: Discover the Synergies Unleashed in Our Platform's Core Strengths, from Seamless Integration to Open Collaboration.",
-    tagline: 'Features',
+    // tagline: 'Features',
   },
   items: [
     {
@@ -131,7 +127,7 @@ export const featuresHome: FeaturesProps = {
       },
     },
     {
-      title: 'DevOpps',
+      title: 'DevOps',
       description:
       "Streamline your development and operations with cutting-edge DevOps solutions for enhanced efficiency and collaboration.",
       icon: IconListCheck,
@@ -183,8 +179,8 @@ export const contentHomeOne: ContentProps = {
     subtitle: "🌐 Discover Our Comprehensive IT Services",
     // tagline: 'Content',
   },
-  content:
-    "As a dynamic IT services provider, we offer a suite of solutions tailored to meet the unique needs of your organization.",
+  // content:
+  //   "As a dynamic IT services provider, we offer a suite of solutions tailored to meet the unique needs of your organization.",
   items: [
     {
       title: 'Managed IT Services',
@@ -395,94 +391,94 @@ export const faqs2Home: FAQsProps = {
 };
 
 // Pricing data on Home page *******************
-// export const pricingHome: PricingProps = {
-//   id: 'pricing-on-home',
-//   hasBackground: true,
-//   header: {
-//     title: 'Prices for each plan',
-//     subtitle:
-//       'Proin eget vestibulum sem, vel ultrices ligula. Vestibulum in eleifend lectus, non mollis odio. Donec nibh ipsum, suscipit non pulvinar quis, lobortis ac lorem.',
-//     // tagline: 'Pricing',
-//   },
-//   prices: [
-//     {
-//       title: 'basic',
-//       price: 29,
-//       period: 'per month',
-//       items: [
-//         {
-//           description: 'Etiam in libero, et volutpat',
-//         },
-//         {
-//           description: 'Aenean ac nunc dolor tristique',
-//         },
-//         {
-//           description: 'Cras scelerisque accumsan lib',
-//         },
-//         {
-//           description: 'In hac habitasse',
-//         },
-//       ],
-//       callToAction: {
-//         targetBlank: true,
-//         text: 'Free 7-day trial',
-//         href: '/',
-//       },
-//       hasRibbon: false,
-//     },
-//     {
-//       title: 'standard',
-//       price: 69,
-//       period: 'per month',
-//       items: [
-//         {
-//           description: 'Proin vel laoreet',
-//         },
-//         {
-//           description: 'Ut efficitur egestas',
-//         },
-//         {
-//           description: 'Pellentesque ut nibh',
-//         },
-//         {
-//           description: 'Donec fringilla sem',
-//         },
-//       ],
-//       callToAction: {
-//         targetBlank: true,
-//         text: 'Free 15-day trial',
-//         href: '/',
-//       },
-//       hasRibbon: true,
-//       ribbonTitle: 'Popular',
-//     },
-//     {
-//       title: 'premium',
-//       price: 199,
-//       period: 'per month',
-//       items: [
-//         {
-//           description: 'Curabitur suscipit risus',
-//         },
-//         {
-//           description: 'Aliquam blandit malesuada',
-//         },
-//         {
-//           description: 'Suspendisse sit amet',
-//         },
-//         {
-//           description: 'Suspendisse auctor dui',
-//         },
-//       ],
-//       callToAction: {
-//         targetBlank: true,
-//         text: 'Free 30-day trial',
-//         href: '/',
-//       },
-//       hasRibbon: false,
-//     },
-//   ],
-// };
+export const pricingHome: PricingProps = {
+  id: 'pricing-on-home',
+  hasBackground: true,
+  header: {
+    title: 'Prices for each plan',
+    subtitle:
+      'Proin eget vestibulum sem, vel ultrices ligula. Vestibulum in eleifend lectus, non mollis odio. Donec nibh ipsum, suscipit non pulvinar quis, lobortis ac lorem.',
+    // tagline: 'Pricing',
+  },
+  prices: [
+    {
+      title: 'basic',
+      price: 29,
+      period: 'per month',
+      items: [
+        {
+          description: 'Etiam in libero, et volutpat',
+        },
+        {
+          description: 'Aenean ac nunc dolor tristique',
+        },
+        {
+          description: 'Cras scelerisque accumsan lib',
+        },
+        {
+          description: 'In hac habitasse',
+        },
+      ],
+      callToAction: {
+        targetBlank: true,
+        text: 'Free 7-day trial',
+        href: '/',
+      },
+      hasRibbon: false,
+    },
+    {
+      title: 'standard',
+      price: 69,
+      period: 'per month',
+      items: [
+        {
+          description: 'Proin vel laoreet',
+        },
+        {
+          description: 'Ut efficitur egestas',
+        },
+        {
+          description: 'Pellentesque ut nibh',
+        },
+        {
+          description: 'Donec fringilla sem',
+        },
+      ],
+      callToAction: {
+        targetBlank: true,
+        text: 'Free 15-day trial',
+        href: '/',
+      },
+      hasRibbon: true,
+      ribbonTitle: 'Popular',
+    },
+    {
+      title: 'premium',
+      price: 199,
+      period: 'per month',
+      items: [
+        {
+          description: 'Curabitur suscipit risus',
+        },
+        {
+          description: 'Aliquam blandit malesuada',
+        },
+        {
+          description: 'Suspendisse sit amet',
+        },
+        {
+          description: 'Suspendisse auctor dui',
+        },
+      ],
+      callToAction: {
+        targetBlank: true,
+        text: 'Free 30-day trial',
+        href: '/',
+      },
+      hasRibbon: false,
+    },
+  ],
+};
 
 // Team data on Home page *******************
 export const teamHome: TeamProps = {
@@ -619,11 +615,11 @@ export const contactHome: ContactProps = {
       description: ['Mobile: +1 (123) 456-7890', 'Mail: GTwebsite@gmail.com'],
       icon: IconPhoneCall,
     },
-    {
-      title: 'Working hours',
-      description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
-      icon: IconClock,
-    },
+      // {
+      //   title: 'Working hours',
+      //   description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
+      //   icon: IconClock,
+      // },
   ],
   form: {
     title: 'Ready to Get Started?',
@@ -655,42 +651,47 @@ export const contactHome: ContactProps = {
 };
 
 // CallToAction data *******************
-// export const callToAction2Home: CallToActionProps = {
-//   title: 'Next.js + Tailwind CSS',
-//   subtitle:
-//     'Aliquam sodales porttitor lacus ac tristique. Etiam posuere elit at leo feugiat sodales. Sed ac mauris quis sem tempor condimentum non at metus.',
-//   callToAction: {
-//     text: 'Get template',
-//     href: 'https://github.com/gtwebwork/GTwebsite',
-//     icon: IconDownload,
-//   },
-//   items: [
-//     {
-//       title: 'Get template',
-//       description: 'Aliquam sodales est lectus, quis.',
-//       href: 'https://github.com/gtwebwork/GTwebsite',
-//     },
-//     {
-//       title: 'Learn more',
-//       description: 'Class aptent taciti sociosqu ad litora torquent per conubia.',
-//       href: '/',
-//     },
-//     {
-//       title: 'Subscribe',
-//       description: 'Morbi orci nunc, euismod ac dui id, convallis.',
-//       form: {
-//         icon: IconMail,
-//         input: {
-//           type: 'email',
-//           name: 'email',
-//           autocomplete: 'email',
-//           placeholder: 'Enter your email address',
-//         },
-//         btn: {
-//           title: 'Subscribe',
-//           type: 'submit',
-//         },
-//       },
-//     },
-//   ],
-// };
+export const callToAction2Home: CallToActionProps = {
+  title: 'Next.js + Tailwind CSS',
+  subtitle:
+    'Aliquam sodales porttitor lacus ac tristique. Etiam posuere elit at leo feugiat sodales. Sed ac mauris quis sem tempor condimentum non at metus.',
+  callToAction: {
+    text: 'Get template',
+    href: 'https://github.com/gtwebwork/GTwebsite',
+    icon: IconArrowMoveRight,
+  },
+  items: [
+    {
+      title: 'Website Creation',
+      description: 'Aliquam sodales est lectus, quis.',
+      href: 'https://github.com/gtwebwork/GTwebsite',
+    },
+    {
+      title: 'AI Chatbots',
+      description: 'Class aptent taciti sociosqu ad litora torquent per conubia.',
+      href: '/',
+    },
+    {
+      title: 'Consultation',
+      description: 'Class aptent taciti sociosqu ad litora torquent per conubia.',
+      href: '/',
+    },
+    // {
+    //   title: 'Subscribe',
+    //   description: 'Morbi orci nunc, euismod ac dui id, convallis.',
+    //   form: {
+    //     icon: IconMail,
+    //     input: {
+    //       type: 'email',
+    //       name: 'email',
+    //       autocomplete: 'email',
+    //       placeholder: 'Enter your email address',
+    //     },
+    //     btn: {
+    //       title: 'Subscribe',
+    //       type: 'submit',
+    //     },
+    //   },
+    // },
+  ],
+};

@@ -12,54 +12,54 @@ import { AnnouncementProps, FooterProps, HeaderProps } from '../types';
 export const headerData: HeaderProps = {
   links: [
     {
-      label: 'Pages',
+      label: 'Our Expertise',
       icon: IconChevronDown,
       links: [
         {
-          label: 'Services',
+          label: 'Software Development',
           href: '/services',
         },
         {
-          label: 'Pricing',
+          label: 'DevOps',
           href: '/pricing',
         },
         {
-          label: 'About us',
+          label: 'AI Services',
           href: '/about',
         },
         {
-          label: 'Contact us',
+          label: 'Support',
           href: '/contact',
         },
-        {
-          label: 'FAQs',
-          href: '/faqs',
-        },
-        {
-          label: 'Terms & Conditions',
-          href: '/terms',
-        },
-        {
-          label: 'Privacy Policy',
-          href: '/privacy',
-        },
+        // {
+        //   label: 'FAQs',
+        //   href: '/faqs',
+        // },
+        // {
+        //   label: 'Terms & Conditions',
+        //   href: '/terms',
+        // },
+        // {
+        //   label: 'Privacy Policy',
+        //   href: '/privacy',
+        // },
       ],
     },
     {
-      label: 'Blog',
-      href: '/blog',
+      label: 'Know Us',
+      href: '/about',
     },
     {
-      label: 'Contact',
-      href: '/contact',
-    },
+      label: 'Insights',
+      href: '/blog',
+    }
   ],
   actions: [
-    // {
-    //   text: 'Download',
-    //   href: 'https://github.com/gtwebwork/GTwebsite',
-    //   targetBlank: true,
-    // },
+    {
+      text: 'Contact Us',
+      href: '/contact',
+      targetBlank: false,
+    },
   ],
   isSticky: true,
   showToggleTheme: true,

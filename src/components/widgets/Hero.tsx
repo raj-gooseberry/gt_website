@@ -2,12 +2,12 @@ import Image from 'next/image';
 import { HeroProps } from '~/shared/types';
 import CTA from '../common/CTA';
 
-const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: HeroProps) => {
+const Hero = ({ title, subtitle, tagline, callToAction, image }: HeroProps) => {
   return (
     <section id="heroOne">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="py-12 md:py-20">
-          <div className="mx-auto max-w-4xl pb-10 text-center md:pb-16">
+      <div className="mx-auto max-w-10xl px-4 sm:px-6">
+        <div className="py-10 md:py-16">
+          <div className="mx-auto max-w-5xl pb-10 text-left md:pb-16">
             {tagline && (
               <p className="text-base font-semibold uppercase tracking-wide text-primary-600 dark:text-primary-200">
                 {tagline}
@@ -18,11 +18,10 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
                 {title}
               </h1>
             )}
-            <div className="mx-auto max-w-3xl">
+            <div className="mr-auto max-w-3xl">
               {subtitle && <p className="mb-6 text-xl font-normal text-gray-600 dark:text-slate-400">{subtitle}</p>}
-              <div className="flex max-w-none flex-col flex-nowrap gap-4 px-4 sm:flex-row sm:justify-center">
-                {callToAction && <CTA callToAction={callToAction} linkClass="btn btn-primary" />}
-                {callToAction2 && <CTA callToAction={callToAction2} linkClass="btn" />}
+              <div className="flex max-w-none flex-col flex-nowrap gap-4 sm:flex-row sm:justify-left">
+                {callToAction && <CTA callToAction={callToAction} />}
               </div>
             </div>
           </div>
