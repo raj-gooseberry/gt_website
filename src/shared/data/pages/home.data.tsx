@@ -28,13 +28,13 @@ import {
   TeamProps,
   TestimonialsProps,
 } from '../../types';
-import heroImg from '~/assets/images/hero3.jpg';
+import heroImg from '~/assets/images/hreo7.jpg';
 import nextJsLogo from '~/assets/images/nextjs-logo.png';
 import reactLogo from '~/assets/images/react-logo.png';
 import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
 import typescriptLogo from '~/assets/images/typescript-logo.png';
 import cameraFrontImg from '~/assets/images/hero5.jpg';
-import cameraBackImg from '~/assets/images/hero7.jpg';
+import cameraBackImg from '~/assets/images/hero3.jpg';
 import gasImg from '~/assets/images/gas.jpg';
 
 // Hero data on Home page *******************
@@ -610,12 +610,12 @@ export const contactHome: ContactProps = {
   items: [
     {
       title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      description: ['677, AGP Sowbhagyam, 6th Main Rd, Ram Nagar South, Madipakkam, Chennai, Tamil Nadu 600091'],
       icon: IconMapPin,
     },
     {
       title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: GTwebsite@gmail.com'],
+      description: ['Mobile: +1 (123) 456-7890', 'Mail: info@gooseberrytechnovision.com'],
       icon: IconPhoneCall,
     },
     // {
