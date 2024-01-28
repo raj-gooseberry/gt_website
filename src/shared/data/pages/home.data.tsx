@@ -14,6 +14,17 @@ import {
   IconMapPin,
   IconPhoneCall,
   IconRocket,
+  IconWorld,
+  IconInfinity,
+  IconVirusSearch,
+  IconBinaryTree2,
+  IconSeo,
+  IconExchange,
+  IconShieldLock,
+  IconCloudComputing,
+  IconChartDots2,
+  IconTopologyStarRing,
+  IconChartHistogram,
 } from '@tabler/icons-react';
 import {
   CallToActionProps,
@@ -36,6 +47,7 @@ import typescriptLogo from '~/assets/images/typescript-logo.png';
 import cameraFrontImg from '~/assets/images/camera-front.jpg';
 import cameraBackImg from '~/assets/images/camera-back.jpg';
 import gasImg from '~/assets/images/gas.jpg';
+import { IconChartGridDots } from '@tabler/icons-react';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
@@ -107,10 +119,10 @@ export const featuresHome: FeaturesProps = {
   },
   items: [
     {
-      title: 'Web Devolopement',
+      title: 'Web Devlopement',
       description:
-        'Drive success online with our top-notch web development services, crafting websites that captivate and convert',
-      icon: IconBrandTailwind,
+      'Drive success online with our top-notch web development services, crafting websites that captivate and convert',
+      icon: IconWorld,
       callToAction: {
         text: 'Discover now',
         href: '/',
@@ -120,7 +132,7 @@ export const featuresHome: FeaturesProps = {
       title: 'Data Science',
       description:
         "Transform your data into a valuable asset with our expert data science services, driving efficiency, and delivering measurable results",
-      icon: IconComponents,
+      icon: IconChartGridDots,
       callToAction: {
         text: 'Discover now',
         href: '/',
@@ -130,7 +142,7 @@ export const featuresHome: FeaturesProps = {
       title: 'DevOps',
       description:
       "Streamline your development and operations with cutting-edge DevOps solutions for enhanced efficiency and collaboration.",
-      icon: IconListCheck,
+      icon: IconInfinity,
       callToAction: {
         text: 'Discover now',
         href: '/',
@@ -140,7 +152,7 @@ export const featuresHome: FeaturesProps = {
       title: 'Software Testing',
       description:
         "Unlock the potential of your software with comprehensive testing strategies that guarantee top-tier quality and performance.",
-      icon: IconRocket,
+      icon: IconVirusSearch,
       callToAction: {
         text: 'Discover now',
         href: '/',
@@ -150,7 +162,7 @@ export const featuresHome: FeaturesProps = {
       title: 'A.I',
       description:
       "Explore transformative A.I. capabilities that drive productivity and success, harnessing the potential of artificial intelligence for unparalleled results.",
-      icon: IconBulb,
+      icon: IconBinaryTree2,
       callToAction: {
         text: 'Discover now',
         href: '/',
@@ -160,7 +172,7 @@ export const featuresHome: FeaturesProps = {
       title: 'Search Engine Optimization (SEO)',
       description:
         "Boost online visibility with our SEO-friendly website. Effective strategies and practices enhance your website's search engine ranking, making it easier for users to find your content.",
-      icon: IconArrowsRightLeft,
+      icon: IconSeo,
       callToAction: {
         text: 'Discover now',
         href: '/',
@@ -185,18 +197,22 @@ export const contentHomeOne: ContentProps = {
     {
       title: 'Managed IT Services',
       description:
-        "🛡️ Ensure the seamless operation of your IT infrastructure with our proactive and responsive managed IT services. From 24/7 monitoring to rapid issue resolution, we've got your back",
+        "Ensure the seamless operation of your IT infrastructure with our proactive and responsive managed IT services. From 24/7 monitoring to rapid issue resolution, we've got your back",
+        icon: IconExchange,
     },
     {
       title: 'Cybersecurity Solutions',
       description:
-       "🔐 Safeguard your digital assets with our robust cybersecurity services. Our experts employ the latest strategies and technologies to protect your business from evolving cyber threats.",
+       "Safeguard your digital assets with our robust cybersecurity services. Our experts employ the latest strategies and technologies to protect your business from evolving cyber threats.",
+       icon: IconShieldLock,
     },
     {
       title: 'Cloud Computing',
       description:
-        "☁️ Unlock the power of the cloud with our scalable and secure cloud computing solutions. Seamlessly migrate, optimize, and manage your data for enhanced flexibility and efficiency.",
+      "Unlock the power of the cloud with our scalable and secure cloud computing solutions. Seamlessly migrate, optimize, and manage your data for enhanced flexibility and efficiency.",
+      icon: IconCloudComputing,
     },
+
     
   ],
   image: {
@@ -217,17 +233,20 @@ export const contentHomeTwo: ContentProps = {
     {
       title: 'IT Consulting',
       description:
-        "🌐 Leverage our seasoned IT consultants to devise a strategic roadmap for your digital transformation. We analyze, plan, and implement solutions that align with your business goals.",
+        "Leverage our seasoned IT consultants to devise a strategic roadmap for your digital transformation. We analyze, plan, and implement solutions that align with your business goals.",
+        icon: IconChartDots2,
     },
     {
       title: 'Network Infrastructure',
       description:
-        "🌐 Build a strong foundation for your digital success with our network infrastructure services. From design to implementation, we ensure a robust and high-performance network tailored to your needs.",
+        "Build a strong foundation for your digital success with our network infrastructure services. From design to implementation, we ensure a robust and high-performance network tailored to your needs.",
+        icon: IconTopologyStarRing,
     },
     {
       title: 'Data Analytics',
       description:
-        "📊 Harness the potential of your data with our advanced analytics services. Gain valuable insights, make informed decisions, and drive your business forward in the data-driven era.",
+        "Harness the potential of your data with our advanced analytics services. Gain valuable insights, make informed decisions, and drive your business forward in the data-driven era.",
+        icon: IconChartHistogram,
     },
   ],
   image: {
