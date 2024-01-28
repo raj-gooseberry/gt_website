@@ -24,5 +24,5 @@ module.exports = {
         hostname: 'miro.medium.com',
       },
     ],
-  }
+  },
 };

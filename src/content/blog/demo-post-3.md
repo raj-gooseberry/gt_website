@@ -3,164 +3,107 @@ publishDate: 'Nov 02 2022'
 title: 'Solving Real Life Business Case Using Supervised Learning with Tensorflow 2.0'
 description: 'Task: Creating a machine learning algorithm that can predict if a customer will buy again'
 excerpt: 'Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat'
-image: 'https://source.unsplash.com/random/1024x640/?vintage+camera'
+image: 'https://miro.medium.com/v2/1*AUjS_z-F8nDk-3Ax4MRh0Q.jpeg'
 tags: [markdown, blog]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<b>Business Case:</b> We have data from an e-book app company, Given data from their database, In dataset each customer has purchased a book once, that’s the condition to be included.
 
-## <a name="Headings"></a>Headings
+## <a name="Headings"></a>Task: Creating a machine learning algorithm that can predict if a customer will buy again
 
-Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem. Ut laborum cillum laboris fugiat culpa sint irure do reprehenderit culpa occaecat. Exercitation esse mollit tempor magna aliqua in occaecat aliquip veniam reprehenderit nisi dolor in laboris dolore velit.
+Now, We want to create a machine learning algorithm, based on our dataset, that can predict whether the customer is going to buy e-book again or not.
+The main idea is that company shouldn't spend it’s advertising budget to the customers who are unlikely to come back and purchase.
+If we can focus our effort to the customers who are likely to come, then we can improve our sales and profitability figures.
 
-## Heading two
+So our model will take several metrics and try to predict human behavior.
 
-Aute officia nulla deserunt do deserunt cillum velit magna. Officia veniam culpa anim minim dolore labore pariatur voluptate id ad est duis quis velit dolor pariatur enim. Incididunt enim excepteur do veniam consequat culpa do voluptate dolor fugiat ad adipisicing sit. Labore officia est adipisicing dolore proident eiusmod exercitation deserunt ullamco anim do occaecat velit. Elit dolor consectetur proident sunt aliquip est do tempor quis aliqua culpa aute. Duis in tempor exercitation pariatur et adipisicing mollit irure tempor ut enim esse commodo laboris proident. Do excepteur laborum anim esse aliquip eu sit id Lorem incididunt elit irure ea nulla dolor et. Nulla amet fugiat qui minim deserunt enim eu cupidatat aute officia do velit ea reprehenderit.
+Okay Let’s talk a look at our data. I have included a git link where you can download the data. The data do not have column headers included, as we require no text on the data when train the model. Just to make you understand, I’ll show you what are the columns.
 
-### Heading three
+![Alt Text](https://miro.medium.com/v2/resize:fit:2000/format:webp/1*roQ7ifORkSCH-g_oZDMBkg.png)
 
-Voluptate cupidatat cillum elit quis ipsum eu voluptate fugiat consectetur enim. Quis ut voluptate culpa ex anim aute consectetur dolore proident voluptate exercitation eiusmod. Esse in do anim magna minim culpa sint. Adipisicing ipsum consectetur proident ullamco magna sit amet aliqua aute fugiat laborum exercitation duis et.
+ID columns are the customers, it can be anything 1,2,3… or atul007, john123 makes no difference, we will skip that any way.
 
-#### Heading four
+Price variable is always a good predictor and Review variable show an engagement with the platform, it shows customers are more likely to come again.
 
-Commodo fugiat aliqua minim quis pariatur mollit id tempor. Non occaecat minim esse enim aliqua adipisicing nostrud duis consequat eu adipisicing qui. Minim aliquip sit excepteur ipsum consequat laborum pariatur excepteur. Veniam fugiat et amet ad elit anim laborum duis mollit occaecat et et ipsum et reprehenderit. Occaecat aliquip dolore adipisicing sint labore occaecat officia fugiat. Quis adipisicing exercitation exercitation eu amet est laboris sunt nostrud ipsum reprehenderit ullamco. Enim sint ut consectetur id anim aute voluptate exercitation mollit dolore magna magna est Lorem. Ut adipisicing adipisicing aliqua ullamco voluptate labore nisi tempor esse magna incididunt.
+If you see Review10/10 most of the rows are empty which is a bad dataset. we can substitute all missing value by the average of the column which is 8.91. For our machine learning algorithms, 8.91 means status quo, a review bigger than 8.91 indicate above average feeling, and below 8.91 indicate below average feeling.
 
-##### Heading five
+Notice, I am saying “feelings”, Review is yet anther variable that is average, a customer might have bought 2–3 books on the platform, based on average rating he/she would have left, it he “feeling”.
 
-Veniam enim esse amet veniam deserunt laboris amet enim consequat. Minim nostrud deserunt cillum consectetur commodo eu enim nostrud ullamco occaecat excepteur. Aliquip et ut est commodo enim dolor amet sint excepteur. Amet ad laboris laborum deserunt sint sunt aliqua commodo ex duis deserunt enim est ex labore ut. Duis incididunt velit adipisicing non incididunt adipisicing adipisicing. Ad irure duis nisi tempor eu dolor fugiat magna et consequat tempor eu ex dolore. Mollit esse nisi qui culpa ut nisi ex proident culpa cupidatat cillum culpa occaecat anim. Ut officia sit ea nisi ea excepteur nostrud ipsum et nulla.
+Last visited minus Purchase date also shows the customers engagement. It shows how frequently customer visits the app
 
-###### Heading six
+Data gathering is always a crucial task, in this case it is from an e-book app as we said, it’s has 2 years worth of engagement.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Targets are the column which is a Boolean, will tell you if he/she will purchase again 1 means Converted, and 0 means didn’t.
 
-[[Top]](#top)
+## What does it mean to convert?
 
-## <a name="Paragraphs"></a>Paragraphs
+We have taken extra 6 months of data to check if that user has converted, So we have 2 years and 6 months data. So if in 6 month he/she has purchased a book, then we count as converted.
+![Alt Text](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*Shv2HgRmKsLLDInXyGonYg.png)
 
-Incididunt ex adipisicing ea ullamco consectetur in voluptate proident fugiat tempor deserunt reprehenderit ullamco id dolore laborum. Do laboris laboris minim incididunt qui consectetur exercitation adipisicing dolore et magna consequat magna anim sunt. Officia fugiat Lorem sunt pariatur incididunt Lorem reprehenderit proident irure. Dolore ipsum aliqua mollit ad officia fugiat sit eu aliquip cupidatat ipsum duis laborum laborum fugiat esse. Voluptate anim ex dolore deserunt ea ex eiusmod irure. Occaecat excepteur aliqua exercitation aliquip dolor esse eu eu.
+So, it’s a classification problem with 2 classes, won’t buy-0 and buy-1.
 
-Officia dolore laborum aute incididunt commodo nisi velit est est elit et dolore elit exercitation. Enim aliquip magna id ipsum aliquip consectetur ad nulla quis. Incididunt pariatur dolor consectetur cillum enim velit cupidatat laborum quis ex.
+Here is some important steps before getting into code.
 
-Officia irure in non voluptate adipisicing sit amet tempor duis dolore deserunt enim ut. Reprehenderit incididunt in ad anim et deserunt deserunt Lorem laborum quis. Enim aute anim labore proident laboris voluptate elit excepteur in. Ex labore nulla velit officia ullamco Lorem Lorem id do. Dolore ullamco ipsum magna dolor pariatur voluptate ipsum id occaecat ipsum. Dolore tempor quis duis commodo quis quis enim.
+### 1. Preprocess the data
 
-[[Top]](#top)
+A. Balance the dataset :We have to make sure the data is equally balanced. for example if we have 90% data of customer who are unlikely to come back,
+a model with 80% accuracy will always give result of customer who are unlikely to come back.So we have to make sure data it 50–50% divided.
 
-## <a name="Blockquotes"></a>Blockquotes
+B. Divide the data dataset in training, validation and test
 
-Ad nisi laborum aute cupidatat magna deserunt eu id laboris id. Aliquip nulla cupidatat sint ex Lorem mollit laborum dolor amet est ut esse aute. Nostrud ex consequat id incididunt proident ipsum minim duis aliqua ut ex et ad quis. Laborum sint esse cillum anim nulla cillum consectetur aliqua sit. Nisi excepteur cillum labore amet excepteur commodo enim occaecat consequat ipsum proident exercitation duis id in.
+C. Save the data into tensor friendly format.
 
-> Ipsum et cupidatat mollit exercitation enim duis sunt irure aliqua reprehenderit mollit. Pariatur Lorem pariatur laboris do culpa do elit irure. Eiusmod amet nulla voluptate velit culpa et aliqua ad reprehenderit sit ut.
+#### 2. Create the machine learning algorithm.
 
-Labore ea magna Lorem consequat aliquip consectetur cillum duis dolore. Et veniam dolor qui incididunt minim amet laboris sit. Dolore ad esse commodo et dolore amet est velit ut nisi ea. Excepteur ea nulla commodo dolore anim dolore adipisicing eiusmod labore id enim esse quis mollit deserunt est. Minim ea culpa voluptate nostrud commodo proident in duis aliquip minim.
+Let’s Open Jupyter Notebook and start coding…
 
-> Qui est sit et reprehenderit aute est esse enim aliqua id aliquip ea anim. Pariatur sint reprehenderit mollit velit voluptate enim consectetur sint enim. Quis exercitation proident elit non id qui culpa dolore esse aliquip consequat.
+Start by importing Numpy and preprocessing from sklearn for Extracting the data from csv and preprocessing
 
-Ipsum excepteur cupidatat sunt minim ad eiusmod tempor sit.
+![Alt Text](https://miro.medium.com/v2/resize:fit:2000/format:webp/1*RfP9lqigycf5J8JVmcDqhg.png)
 
-> Deserunt excepteur adipisicing culpa pariatur cillum laboris ullamco nisi fugiat cillum officia. In cupidatat nulla aliquip tempor ad Lorem Lorem quis voluptate officia consectetur pariatur ex in est duis. Mollit id esse est elit exercitation voluptate nostrud nisi laborum magna dolore dolore tempor in est consectetur.
+Now we have all the data’s in our variables unscaled_input_all consist of the data except first and last columns as mentioned earlier.
 
-Adipisicing voluptate ipsum culpa voluptate id aute laboris labore esse fugiat veniam ullamco occaecat do ut. Tempor et esse reprehenderit veniam proident ipsum irure sit ullamco et labore ea excepteur nulla labore ut. Ex aute minim quis tempor in eu id id irure ea nostrud dolor esse.
+![Alt Text](https://miro.medium.com/v2/resize:fit:2000/format:webp/1*f4nVWDLcx7G1GsxxmBNJBQ.png)
 
-[[Top]](#top)
+We have balanced the dataset by removing extra zeros and made it almost equal to ones. Let’s Standardize the dataset using Preprocessing .
 
-## <a name="Lists"></a>Lists
+![Alt Text](https://miro.medium.com/v2/resize:fit:2000/format:webp/1*g_xoppzGJ0QiTl3euI1MTQ.png)
 
-### Ordered List
+we are done with Preprocessing, there is only one thing remaining, we need to shuffle the data, It is possible the data is collected in date series, we need to shuffle. It should be randomly split as possible.
 
-1. Longan
-2. Lychee
-3. Excepteur ad cupidatat do elit laborum amet cillum reprehenderit consequat quis.
-   Deserunt officia esse aliquip consectetur duis ut labore laborum commodo aliquip aliquip velit pariatur dolore.
-4. Marionberry
-5. Melon
-   - Cantaloupe
-   - Honeydew
-   - Watermelon
-6. Miracle fruit
-7. Mulberry
+![Alt Text](https://miro.medium.com/v2/resize:fit:2000/format:webp/1*9pi-3_eQwzVXpdddfjCU8g.png)
 
-### Unordered List
+So far we have Preprocessed , Shuffled and balanced the data, what we have left is split into training, validation and test, let’s do that now.
 
-- Olive
-- Orange
-  - Blood orange
-  - Clementine
-- Papaya
-- Ut aute ipsum occaecat nisi culpa Lorem id occaecat cupidatat id id magna laboris ad duis. Fugiat cillum dolore veniam nostrud proident sint consectetur eiusmod irure adipisicing.
-- Passionfruit
+![Alt Text](https://miro.medium.com/v2/resize:fit:2000/format:webp/1*IisHoiks6JdPf4AxzlQlqg.png)
 
-[[Top]](#top)
+Validation data is for preventing overfitting, Now we are done with the data, let’s create our model. We are going to use Tensorflow 2.0 to create our model.
 
-## <a name="Horizontal"></a>Horizontal rule
+![Alt Text](https://miro.medium.com/v2/resize:fit:2000/format:webp/1*vW0wELr4u7lcVcRERPWA7A.png)
 
-In dolore velit aliquip labore mollit minim tempor veniam eu veniam ad in sint aliquip mollit mollit. Ex occaecat non deserunt elit laborum sunt tempor sint consequat culpa culpa qui sit. Irure ad commodo eu voluptate mollit cillum cupidatat veniam proident amet minim reprehenderit.
+And now Let’s Train our model
 
----
+![Alt Text](https://miro.medium.com/v2/resize:fit:2000/format:webp/1*0YZcCRvmTu0cfty3T0KlxQ.png)
+![Alt Text](https://miro.medium.com/v2/resize:fit:2000/format:webp/1*EsysZRPQbw-TvPYyxZGy3Q.png)
 
-In laboris eiusmod reprehenderit aliquip sit proident occaecat. Non sit labore anim elit veniam Lorem minim commodo eiusmod irure do minim nisi. Dolor amet cillum excepteur consequat sint non sint.
+The result what we get is outstanding. After a train of 100 epoch we have reached an accuracy to approx 90%. But before we get too exited, take a moment to think why did our model take all 100 epochs? Is there a danger of overfitting. The answer is yes we have overfitted the model. if you see the above image. val_loss is increasing which mean we need to do an early stopping before the model starts doing overfitting.
 
-[[Top]](#top)
+We will use tensorflow earlystopping
 
-## <a name="Table"></a>Table
+![Alt Text](https://miro.medium.com/v2/resize:fit:2000/format:webp/1*1vSV7YEdehydnBGu1ayMiA.png)
 
-Duis sunt ut pariatur reprehenderit mollit mollit magna dolore in pariatur nulla commodo sit dolor ad fugiat. Laboris amet ea occaecat duis eu enim exercitation deserunt ea laborum occaecat reprehenderit. Et incididunt dolor commodo consequat mollit nisi proident non pariatur in et incididunt id. Eu ut et Lorem ea ex magna minim ipsum ipsum do.
+Now we can see the accuracy is 92% and went to only 7 epochs after using patience=3
 
-| Table Heading 1 | Table Heading 2 | Center align | Right align | Table Heading 5 |
-| :-------------- | :-------------- | :----------: | ----------: | :-------------- |
-| Item 1          | Item 2          |    Item 3    |      Item 4 | Item 5          |
-| Item 1          | Item 2          |    Item 3    |      Item 4 | Item 5          |
-| Item 1          | Item 2          |    Item 3    |      Item 4 | Item 5          |
-| Item 1          | Item 2          |    Item 3    |      Item 4 | Item 5          |
-| Item 1          | Item 2          |    Item 3    |      Item 4 | Item 5          |
+Great!!! Now we can test our model
 
-Minim id consequat adipisicing cupidatat laborum culpa veniam non consectetur et duis pariatur reprehenderit eu ex consectetur. Sunt nisi qui eiusmod ut cillum laborum Lorem officia aliquip laboris ullamco nostrud laboris non irure laboris. Cillum dolore labore Lorem deserunt mollit voluptate esse incididunt ex dolor.
+To test the model we will use the method Evaluate from tensorflow
 
-[[Top]](#top)
+![Alt Text](https://miro.medium.com/v2/resize:fit:2000/format:webp/1*Pmxzo8_ed-Vvwe3MEdxhPQ.png)
 
-## <a name="Code"></a>Code
+Okay, Now that’s the final accuracy of the model.
 
-### Inline code
+Please try out yourself and comment. Code is available in GITHUB
 
-Ad amet irure est magna id mollit Lorem in do duis enim. Excepteur velit nisi magna ea pariatur pariatur ullamco fugiat deserunt sint non sint. Duis duis est `code in text` velit velit aute culpa ex quis pariatur pariatur laborum aute pariatur duis tempor sunt ad. Irure magna voluptate dolore consectetur consectetur irure esse. Anim magna `<strong>in culpa qui officia</strong>` dolor eiusmod esse amet aute cupidatat aliqua do id voluptate cupidatat reprehenderit amet labore deserunt.
+Thank you..
 
-### Highlighted
-
-Et fugiat ad nisi amet magna labore do cillum fugiat occaecat cillum Lorem proident. In sint dolor ullamco ad do adipisicing amet id excepteur Lorem aliquip sit irure veniam laborum duis cillum. Aliqua occaecat minim cillum deserunt magna sunt laboris do do irure ea nostrud consequat ut voluptate ex.
-
-```go
-package main
-
-import (
-    "fmt"
-    "net/http"
-)
-
-func handler(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
-}
-
-func main() {
-    http.HandleFunc("/", handler)
-    http.ListenAndServe(":8080", nil)
-}
-```
-
-Ex amet id ex aliquip id do laborum excepteur exercitation elit sint commodo occaecat nostrud est. Nostrud pariatur esse veniam laborum non sint magna sit laboris minim in id. Aliqua pariatur pariatur excepteur adipisicing irure culpa consequat commodo et ex id ad.
-
-[[Top]](#top)
-
-## <a name="Inline"></a>Inline elements
-
-Sint ea anim ipsum ad commodo cupidatat do **exercitation** incididunt et minim ad labore sunt. Minim deserunt labore laboris velit nulla incididunt ipsum nulla. Ullamco ad laborum ea qui et anim in laboris exercitation tempor sit officia laborum reprehenderit culpa velit quis. **Consequat commodo** reprehenderit duis [irure](#!) esse esse exercitation minim enim Lorem dolore duis irure. Nisi Lorem reprehenderit ea amet excepteur dolor excepteur magna labore proident voluptate ipsum. Reprehenderit ex esse deserunt aliqua ea officia mollit Lorem nulla magna enim. Et ad ipsum labore enim ipsum **cupidatat consequat**. Commodo non ea cupidatat magna deserunt dolore ipsum velit nulla elit veniam nulla eiusmod proident officia.
-
-![Super wide](https://images.unsplash.com/photo-1471128466710-c26ff0d26143?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2MDc4MTk3Mw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080)
-
-_Proident sit veniam in est proident officia adipisicing_ ea tempor cillum non cillum velit deserunt. Voluptate laborum incididunt sit consectetur Lorem irure incididunt voluptate nostrud. Commodo ut eiusmod tempor cupidatat esse enim minim ex anim consequat. Mollit sint culpa qui laboris quis consectetur ad sint esse. Amet anim anim minim ullamco et duis non irure. Sit tempor adipisicing ea laboris `culpa ex duis sint` anim aute reprehenderit id eu ea. Aute [excepteur proident](#!) Lorem minim adipisicing nostrud mollit ad ut voluptate do nulla esse occaecat aliqua sint anim.
-
-![Not so big](https://placekitten.com/480/400)
-
-Incididunt in culpa cupidatat mollit cillum qui proident sit. In cillum aliquip incididunt voluptate magna amet cupidatat cillum pariatur sint aliqua est _enim **anim** voluptate_. Magna aliquip proident incididunt id duis pariatur eiusmod incididunt commodo culpa dolore sit. Culpa do nostrud elit ad exercitation anim pariatur non minim nisi **adipisicing sunt _officia_**. Do deserunt magna mollit Lorem commodo ipsum do cupidatat mollit enim ut elit veniam ea voluptate.
-
-Reprehenderit non eu quis in ad elit esse qui aute id [incididunt](#!) dolore cillum. Esse laboris consequat dolor anim exercitation tempor aliqua deserunt velit magna laboris. Culpa culpa minim duis amet mollit do quis amet commodo nulla irure.
-
-[[Top]](#top)
+#TensorFlow #Tensorflow2 #MachineLearning #Overfitting #SupervisedLearning

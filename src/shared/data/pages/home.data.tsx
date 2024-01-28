@@ -303,7 +303,7 @@ export const stepsHome: StepsProps = {
   ],
 };
 
-// Testimonials data on Home page *******************
+// Testimonials 2 data on Home page *******************
 
 export const testimonials2About: TestimonialsProps = {
   id: 'testimonialsTwo-on-about',
@@ -376,6 +376,8 @@ export const testimonials2About: TestimonialsProps = {
     },
   ],
 };
+
+// Testimonials data on Home page *******************
 
 export const testimonialsHome: TestimonialsProps = {
   id: 'testimonials-on-home',
