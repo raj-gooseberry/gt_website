@@ -2,7 +2,7 @@ import { IconChevronRight } from '@tabler/icons-react';
 import { CallToActionProps, Item } from '~/shared/types';
 
 const Card = ({ title, description, href, form }: Item) => (
-  <div className="card mb-6 px-5 py-4 hover:bg-dark-950 hover:scale-105">
+  <div className="card mb-6 px-5 py-4 hover:bg-dark-950 ease-in-out hover:scale-105">
     <div className="flex items-center justify-between">
       <div className="w-full">
         <h3 className="mb-3 text-xl font-bold text-dark-700 dark:text-tertiary-100">{title}</h3>

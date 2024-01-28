@@ -48,11 +48,11 @@ import cameraFrontImg from '~/assets/images/hero5.jpg';
 import cameraBackImg from '~/assets/images/hero3.jpg';
 import gasImg from '~/assets/images/gas.jpg';
 import { IconChartGridDots } from '@tabler/icons-react';
-import revanture from '~/assets/images/revanture.svg';
-import client1 from '~/assets/images/client1.svg';
-import client2 from '~/assets/images/client2.svg';
-import client3 from '~/assets/images/client3.svg';
-import client4 from '~/assets/images/client4.svg';
+// import revanture from '~/assets/images/revanture.svg';
+import client1 from '~/assets/images/client1.png';
+import client2 from '~/assets/images/client2.png';
+import client3 from '~/assets/images/client3.png';
+import client4 from '~/assets/images/client4.png';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
@@ -89,27 +89,22 @@ export const socialProofHome: SocialProofProps = {
   hasBackground: false,
   images: [
     {
-      link: 'revanture',
-      src: revanture,
-      alt: 'revanture',
-    },
-    {
-      link: 'client1',
+      // link: 'client1',
       src: client1,
       alt: 'client1',
     },
     {
-      link: 'client2',
+      // link: 'client2',
       src: client2,
       alt: 'client2',
     },
     {
-      link: 'client3',
+      // link: 'client3',
       src: client3,
       alt: 'client3',
     },
     {
-      link: 'client4',
+      // link: 'client4',
       src: client4,
       alt: 'client4',
     },
@@ -703,11 +698,11 @@ export const contactHome: ContactProps = {
   hasBackground: true,
   header: {
     title: 'Get in Touch',
-    subtitle: `🚀 Transform Your Business Today with Gooseberry Technovision!`,
+    subtitle: `Transform Your Business Today with Gooseberry Technovision!`,
     // tagline: 'Contact',
   },
   content:
-    'Ready to take the leap into the future of digital innovation? Contact us now for a personalized consultation. Gooseberry Technovision - Your Trusted IT Services Partner, Driving Innovation, and Powering Growth! 🚀✨',
+    'Ready to take the leap into the future of digital innovation? Contact us now for a personalized consultation. Gooseberry Technovision - Your Trusted IT Services Partner, Driving Innovation, and Powering Growth!',
   items: [
     {
       title: 'Our Address',
@@ -716,7 +711,7 @@ export const contactHome: ContactProps = {
     },
     {
       title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: info@gooseberrytechnovision.com'],
+      description: ['Mail: info@gooseberrytechnovision.com'],
       icon: IconPhoneCall,
     },
     // {
