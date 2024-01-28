@@ -44,8 +44,8 @@ export default function Page() {
       <Content {...contentHomeOne} />
       <Content {...contentHomeTwo} />
       <Testimonials2 {...testimonials2About} />
+      <Contact {...contactHome} />
       {/* <Testimonials {...testimonialsHome} /> */}
-      {/* <Contact {...contactHome} /> */}
     </>
   );
 }

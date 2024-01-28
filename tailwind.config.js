@@ -6,16 +6,6 @@ module.exports = {
   content: ['./app/**/*.{js,ts,jsx,tsx}', './src/**/*.{js,ts,jsx,tsx,md,mdx}'],
   theme: {
     extend: {
-      // colors: {
-      //   primary: colors.sky,
-      //   secondary: colors.blue,
-      //   tertiary: colors.gray,
-      //   text: colors.gray,
-      //   primary_dark: colors.indigo,
-      //   secondary_dark: colors.blue,
-      //   tertiary_dark: colors.gray,
-      //   text_dark: colors.gray
-      // },
       colors: {
         primary: {
           50: "#FBFDF7",

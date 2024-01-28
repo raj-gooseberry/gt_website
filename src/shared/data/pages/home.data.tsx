@@ -198,7 +198,7 @@ export const featuresHome: FeaturesProps = {
 // Content data on Home page *******************
 export const contentHomeOne: ContentProps = {
   id: 'contentOne-on-home-one',
-  hasBackground: true,
+  hasBackground: false,
   header: {
     title: 'Revolutionize Your Business with Gooseberry technovision - Your Premier IT Services Partner!',
     subtitle: '🌐 Discover Our Comprehensive IT Services',
@@ -237,7 +237,7 @@ export const contentHomeOne: ContentProps = {
 // Content data on Home page *******************
 export const contentHomeTwo: ContentProps = {
   id: 'contentOne-on-home-two',
-  hasBackground: true,
+  hasBackground: false,
   // content:
   //   'Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te latine theophrastus. Ea his tale nib dissentias, mei exerci tamquam euripidis cu.',
   items: [
@@ -312,7 +312,7 @@ export const stepsHome: StepsProps = {
 
 export const testimonials2About: TestimonialsProps = {
   id: 'testimonialsTwo-on-about',
-  hasBackground: true,
+  hasBackground: false,
   isTestimonialUp: true,
   header: {
     title: 'Our success stories',
