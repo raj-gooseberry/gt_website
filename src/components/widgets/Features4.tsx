@@ -25,7 +25,7 @@ const Features4 = ({
       <div aria-hidden="true" className="aspect-w-16 aspect-h-7">
         {image && (
           <Image
-            className="w-full h-80 object-cover rounded-xl mx-auto bg-dark-500 shadow-lg"
+            className="w-full h-80 object-cover rounded-xl mx-auto bg-primary-500 shadow-lg"
             src={image.src}
             alt={image.alt}
             width={728}
@@ -40,7 +40,7 @@ const Features4 = ({
       columns={columns}
       defaultColumns={4}
       containerClass={`mt-12 ${columns === 2 ? 'max-w-5xl' : ''}`}
-      panelClass={`flex max-w-full min-h-56 border-2 ${columns === 2 ? ' sm:max-w-md mx-auto' : ''}`}
+      panelClass={`flex max-w-full min-h-56  ${columns === 2 ? ' sm:max-w-md mx-auto' : ''}`}
       titleClass="text-lg font-semibold mb-2"
       descriptionClass="mt-0.5"
       iconClass="flex-shrink-0 mr-4 mt-1 w-6 h-6 text-primary-800 dark:text-primary-600"

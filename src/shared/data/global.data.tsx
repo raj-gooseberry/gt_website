@@ -70,16 +70,16 @@ export const headerData: HeaderProps = {
 // Footer data
 export const footerData: FooterProps = {
   title: 'GTwebsite',
-  links: [
-    {
-      label: 'Terms & Conditions',
-      href: '/terms',
-    },
-    {
-      label: 'Privacy Policy',
-      href: '/privacy',
-    },
-  ],
+  // links: [
+  //   {
+  //     label: 'Terms & Conditions',
+  //     href: '/terms',
+  //   },
+  //   {
+  //     label: 'Privacy Policy',
+  //     href: '/privacy',
+  //   },
+  // ],
   columns: [
     {
       title: 'Product',
@@ -208,16 +208,16 @@ export const footerData: FooterProps = {
 
 // Footer2 data
 export const footerData2: FooterProps = {
-  links: [
-    {
-      label: 'Terms & Conditions',
-      href: '/terms',
-    },
-    {
-      label: 'Privacy Policy',
-      href: '/privacy',
-    },
-  ],
+  // links: [
+  //   {
+  //     label: 'Terms & Conditions',
+  //     href: '/terms',
+  //   },
+  //   {
+  //     label: 'Privacy Policy',
+  //     href: '/privacy',
+  //   },
+  // ],
   columns: [
     {
       title: 'Address',
@@ -239,18 +239,18 @@ export const footerData2: FooterProps = {
     { label: 'RSS', icon: IconRss, href: '#' },
     { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/gtwebwork/GTwebsite' },
   ],
-  footNote: (
-    <div className="mr-4 text-sm">
-      <span className="float-left mr-1.5 h-5 w-5 rounded-sm bg-[url(https://gtwebwork.com/favicon/favicon-32x32.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span>
-      Made by{' '}
-      <a
-        className="font-semibold text-dark-900 dark:text-dark-200 hover:text-blue-600 hover:underline dark:hover:text-blue-600"
-        href="https://gtwebwork.com/"
-      >
-        {' '}
-        gtwebwork
-      </a>{' '}
-      · All rights reserved.
-    </div>
-  ),
+  // footNote: (
+  //   <div className="mr-4 text-sm">
+  //     <span className="float-left mr-1.5 h-5 w-5 rounded-sm bg-[url(https://gtwebwork.com/favicon/favicon-32x32.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span>
+  //     Made by{' '}
+  //     <a
+  //       className="font-semibold text-dark-900 dark:text-dark-200 hover:text-blue-600 hover:underline dark:hover:text-blue-600"
+  //       href="https://gtwebwork.com/"
+  //     >
+  //       {' '}
+  //       gtwebwork
+  //     </a>{' '}
+  //     · All rights reserved.
+  //   </div>
+  // ),
 };

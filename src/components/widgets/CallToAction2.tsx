@@ -2,11 +2,13 @@ import { IconChevronRight } from '@tabler/icons-react';
 import { CallToActionProps, Item } from '~/shared/types';
 
 const Card = ({ title, description, href, form }: Item) => (
-  <div className="card mb-6 px-5 py-4 hover:bg-dark-950 hover:scale-105">
+  <div className="card mb-6 px-5 py-4 hover:bg-primary-200 hover:scale-105 group">
     <div className="flex items-center justify-between">
       <div className="w-full">
-        <h3 className="mb-3 text-xl font-bold text-dark-700 dark:text-tertiary-100">{title}</h3>
-        <p className="text-dark-600 dark:text-dark-400">{description}</p>
+        <h3 className="mb-3 text-xl font-bold text-dark-700 dark:text-tertiary-100 group-hover:text-dark-900">
+          {title}
+        </h3>
+        <p className="text-dark-600 dark:text-dark-400 group-hover:text-dark-800">{description}</p>
       </div>
       {href && (
         <div className="flex h-10 w-10 items-center justify-center">
@@ -44,12 +46,12 @@ const Card = ({ title, description, href, form }: Item) => (
 );
 
 const CallToAction2 = ({ title, subtitle, items }: CallToActionProps) => (
-  <section className="bg-secondary-400 dark:bg-dark-700 text-dark-200" id="callToActionTwo">
+  <section className="bg-secondary-400 dark:bg-dark-700 text-primary-100" id="callToActionTwo">
     <div className="mx-auto max-w-7xl px-4 py-16 lg:px-8 lg:pt-20">
       <div className="row-gap-10 grid gap-6 md:grid-cols-2">
         <div className="mx-auto md:my-auto md:ml-0 md:pb-6 md:pr-24">
           <h2 className="mb-3 flex justify-center text-6xl font-bold md:justify-start">{title}</h2>
-          <p className="text-center text-xl text-dark-200 dark:text-dark-300 md:text-left">{subtitle}</p>
+          <p className="text-center text-xl text-primary-100 dark:text-dark-300 md:text-left">{subtitle}</p>
         </div>
         <div className="relative -mb-6">
           {items &&

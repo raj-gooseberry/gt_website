@@ -1,7 +1,7 @@
 ---
 publishDate: 'Nov 02 2022'
-title: 'Do excepteur laborum anim esse'
-description: 'Lorem ipsum dolor sit amet'
+title: 'Solving Real Life Business Case Using Supervised Learning with Tensorflow 2.0'
+description: 'Task: Creating a machine learning algorithm that can predict if a customer will buy again'
 excerpt: 'Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat'
 image: 'https://source.unsplash.com/random/1024x640/?vintage+camera'
 tags: [markdown, blog]

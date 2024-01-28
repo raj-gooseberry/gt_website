@@ -48,11 +48,11 @@ import cameraFrontImg from '~/assets/images/hero5.jpg';
 import cameraBackImg from '~/assets/images/hero3.jpg';
 import gasImg from '~/assets/images/gas.jpg';
 import { IconChartGridDots } from '@tabler/icons-react';
-import revanture from '~/assets/images/revanture.svg';
-import client1 from '~/assets/images/client1.svg';
-import client2 from '~/assets/images/client2.svg';
-import client3 from '~/assets/images/client3.svg';
-import client4 from '~/assets/images/client4.svg';
+// import revanture from '~/assets/images/revanture.svg';
+import client1 from '~/assets/images/client1.png';
+import client2 from '~/assets/images/client2.png';
+import client3 from '~/assets/images/client3.png';
+import client4 from '~/assets/images/client4.png';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
@@ -89,27 +89,22 @@ export const socialProofHome: SocialProofProps = {
   hasBackground: false,
   images: [
     {
-      link: 'revanture',
-      src: revanture,
-      alt: 'revanture',
-    },
-    {
-      link: 'client1',
+      // link: 'client1',
       src: client1,
       alt: 'client1',
     },
     {
-      link: 'client2',
+      // link: 'client2',
       src: client2,
       alt: 'client2',
     },
     {
-      link: 'client3',
+      // link: 'client3',
       src: client3,
       alt: 'client3',
     },
     {
-      link: 'client4',
+      // link: 'client4',
       src: client4,
       alt: 'client4',
     },
@@ -135,7 +130,7 @@ export const featuresHome: FeaturesProps = {
     {
       title: 'Web Devlopement',
       description:
-      'Drive success online with our top-notch web development services, crafting websites that captivate and convert',
+        'Drive success online with our top-notch web development services, crafting websites that captivate and convert',
       icon: IconWorld,
       callToAction: {
         text: 'Discover now',
@@ -145,7 +140,7 @@ export const featuresHome: FeaturesProps = {
     {
       title: 'Data Science',
       description:
-        "Transform your data into a valuable asset with our expert data science services, driving efficiency, and delivering measurable results",
+        'Transform your data into a valuable asset with our expert data science services, driving efficiency, and delivering measurable results',
       icon: IconChartGridDots,
       callToAction: {
         text: 'Discover now',
@@ -155,7 +150,7 @@ export const featuresHome: FeaturesProps = {
     {
       title: 'DevOps',
       description:
-      "Streamline your development and operations with cutting-edge DevOps solutions for enhanced efficiency and collaboration.",
+        'Streamline your development and operations with cutting-edge DevOps solutions for enhanced efficiency and collaboration.',
       icon: IconInfinity,
       callToAction: {
         text: 'Discover now',
@@ -165,7 +160,7 @@ export const featuresHome: FeaturesProps = {
     {
       title: 'Software Testing',
       description:
-        "Unlock the potential of your software with comprehensive testing strategies that guarantee top-tier quality and performance.",
+        'Unlock the potential of your software with comprehensive testing strategies that guarantee top-tier quality and performance.',
       icon: IconVirusSearch,
       callToAction: {
         text: 'Discover now',
@@ -175,7 +170,7 @@ export const featuresHome: FeaturesProps = {
     {
       title: 'A.I',
       description:
-      "Explore transformative A.I. capabilities that drive productivity and success, harnessing the potential of artificial intelligence for unparalleled results.",
+        'Explore transformative A.I. capabilities that drive productivity and success, harnessing the potential of artificial intelligence for unparalleled results.',
       icon: IconBinaryTree2,
       callToAction: {
         text: 'Discover now',
@@ -198,7 +193,7 @@ export const featuresHome: FeaturesProps = {
 // Content data on Home page *******************
 export const contentHomeOne: ContentProps = {
   id: 'contentOne-on-home-one',
-  hasBackground: true,
+  hasBackground: false,
   header: {
     title: 'Revolutionize Your Business with Gooseberry technovision - Your Premier IT Services Partner!',
     subtitle: '🌐 Discover Our Comprehensive IT Services',
@@ -211,18 +206,18 @@ export const contentHomeOne: ContentProps = {
       title: 'Managed IT Services',
       description:
         "Ensure the seamless operation of your IT infrastructure with our proactive and responsive managed IT services. From 24/7 monitoring to rapid issue resolution, we've got your back",
-        icon: IconExchange,
+      icon: IconExchange,
     },
     {
       title: 'Cybersecurity Solutions',
       description:
-       "Safeguard your digital assets with our robust cybersecurity services. Our experts employ the latest strategies and technologies to protect your business from evolving cyber threats.",
-       icon: IconShieldLock,
+        'Safeguard your digital assets with our robust cybersecurity services. Our experts employ the latest strategies and technologies to protect your business from evolving cyber threats.',
+      icon: IconShieldLock,
     },
     {
       title: 'Cloud Computing',
       description:
-      "Unlock the power of the cloud with our scalable and secure cloud computing solutions. Seamlessly migrate, optimize, and manage your data for enhanced flexibility and efficiency.",
+        'Unlock the power of the cloud with our scalable and secure cloud computing solutions. Seamlessly migrate, optimize, and manage your data for enhanced flexibility and efficiency.',
       icon: IconCloudComputing,
     },
   ],
@@ -237,27 +232,27 @@ export const contentHomeOne: ContentProps = {
 // Content data on Home page *******************
 export const contentHomeTwo: ContentProps = {
   id: 'contentOne-on-home-two',
-  hasBackground: true,
+  hasBackground: false,
   // content:
   //   'Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te latine theophrastus. Ea his tale nib dissentias, mei exerci tamquam euripidis cu.',
   items: [
     {
       title: 'IT Consulting',
       description:
-        "Leverage our seasoned IT consultants to devise a strategic roadmap for your digital transformation. We analyze, plan, and implement solutions that align with your business goals.",
-        icon: IconChartDots2,
+        'Leverage our seasoned IT consultants to devise a strategic roadmap for your digital transformation. We analyze, plan, and implement solutions that align with your business goals.',
+      icon: IconChartDots2,
     },
     {
       title: 'Network Infrastructure',
       description:
-        "Build a strong foundation for your digital success with our network infrastructure services. From design to implementation, we ensure a robust and high-performance network tailored to your needs.",
-        icon: IconTopologyStarRing,
+        'Build a strong foundation for your digital success with our network infrastructure services. From design to implementation, we ensure a robust and high-performance network tailored to your needs.',
+      icon: IconTopologyStarRing,
     },
     {
       title: 'Data Analytics',
       description:
-        "Harness the potential of your data with our advanced analytics services. Gain valuable insights, make informed decisions, and drive your business forward in the data-driven era.",
-        icon: IconChartHistogram,
+        'Harness the potential of your data with our advanced analytics services. Gain valuable insights, make informed decisions, and drive your business forward in the data-driven era.',
+      icon: IconChartHistogram,
     },
   ],
   image: {
@@ -312,11 +307,11 @@ export const stepsHome: StepsProps = {
 
 export const testimonials2About: TestimonialsProps = {
   id: 'testimonialsTwo-on-about',
-  hasBackground: true,
+  hasBackground: false,
   isTestimonialUp: true,
   header: {
-    title: 'Our success stories',
-    tagline: 'Customer comments',
+    title: 'What our customers say about us',
+    // tagline: 'Customer comments',
   },
   testimonials: [
     {
@@ -381,7 +376,6 @@ export const testimonials2About: TestimonialsProps = {
     },
   ],
 };
-
 
 export const testimonialsHome: TestimonialsProps = {
   id: 'testimonials-on-home',
@@ -704,11 +698,11 @@ export const contactHome: ContactProps = {
   hasBackground: true,
   header: {
     title: 'Get in Touch',
-    subtitle: `🚀 Transform Your Business Today with Gooseberry Technovision!`,
+    subtitle: `Transform Your Business Today with Gooseberry Technovision!`,
     // tagline: 'Contact',
   },
   content:
-    'Ready to take the leap into the future of digital innovation? Contact us now for a personalized consultation. Gooseberry Technovision - Your Trusted IT Services Partner, Driving Innovation, and Powering Growth! 🚀✨',
+    'Ready to take the leap into the future of digital innovation? Contact us now for a personalized consultation. Gooseberry Technovision - Your Trusted IT Services Partner, Driving Innovation, and Powering Growth!',
   items: [
     {
       title: 'Our Address',
@@ -717,7 +711,7 @@ export const contactHome: ContactProps = {
     },
     {
       title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: info@gooseberrytechnovision.com'],
+      description: ['Mail: info@gooseberrytechnovision.com'],
       icon: IconPhoneCall,
     },
     // {
@@ -778,7 +772,8 @@ export const callToAction2Home: CallToActionProps = {
     },
     {
       title: 'Serverless',
-      description: 'Empower your innovation with hassle-free serverless solutions.',
+      description:
+        'Revolutionize your business with our serverless solutions – seamless, scalable, and tailored for your success.',
       href: '/',
     },
     // {

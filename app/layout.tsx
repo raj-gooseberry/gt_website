@@ -4,7 +4,7 @@ import { SITE } from '~/config.js';
 
 import Providers from '~/components/atoms/Providers';
 import Header from '~/components/widgets/Header';
-import Footer2 from '~/components/widgets/Footer';
+import Footer from '~/components/widgets/Footer2';
 
 import { Poppins as CustomFont } from 'next/font/google';
 import '~/assets/styles/base.css';
@@ -34,7 +34,7 @@ export default function RootLayout({ children }: LayoutProps) {
         <Providers>
           <Header />
           <main>{children}</main>
-          <Footer2 />
+          <Footer />
         </Providers>
       </body>
     </html>
