@@ -56,9 +56,9 @@ const FAQs4 = ({ header, tabs, id, hasBackground = false }: FAQsProps) => {
                 {activeTab === index && (
                   <Collapse
                     items={tab.items as Item[]}
-                    classCollapseItem="border-b border-solid border-slate-300 dark:border-slate-500 py-5"
-                    iconUp={<IconMinus className="h-6 w-6 text-primary-600 dark:text-slate-200" />}
-                    iconDown={<IconPlus className="h-6 w-6 text-primary-600 dark:text-slate-200" />}
+                    classCollapseItem="border-b border-solid border-dark-300 dark:border-dark-500 py-5"
+                    iconUp={<IconMinus className="h-6 w-6 text-primary-600 dark:text-dark-200" />}
+                    iconDown={<IconPlus className="h-6 w-6 text-primary-600 dark:text-dark-200" />}
                   />
                 )}
               </div>

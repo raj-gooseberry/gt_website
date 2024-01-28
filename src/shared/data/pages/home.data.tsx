@@ -39,13 +39,13 @@ import {
   TeamProps,
   TestimonialsProps,
 } from '../../types';
-import heroImg from '~/assets/images/hero.jpg';
+import heroImg from '~/assets/images/hreo7.jpg';
 import nextJsLogo from '~/assets/images/nextjs-logo.png';
 import reactLogo from '~/assets/images/react-logo.png';
 import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
 import typescriptLogo from '~/assets/images/typescript-logo.png';
-import cameraFrontImg from '~/assets/images/camera-front.jpg';
-import cameraBackImg from '~/assets/images/camera-back.jpg';
+import cameraFrontImg from '~/assets/images/hero5.jpg';
+import cameraBackImg from '~/assets/images/hero3.jpg';
 import gasImg from '~/assets/images/gas.jpg';
 import { IconChartGridDots } from '@tabler/icons-react';
 
@@ -53,13 +53,17 @@ import { IconChartGridDots } from '@tabler/icons-react';
 export const heroHome: HeroProps = {
   title: (
     <>
-      Innovate.<span className="hidden md:inline">Elevate.</span><span>Dominate</span>
+      Innovate.<span className="hidden md:inline">Elevate.</span>
+      <span>Dominate</span>
     </>
   ),
   subtitle: (
     <>
       <span className="hidden md:inline">
-        <span className="font-semibold ">Gooseberry Technovision is a dynamic and innovative technology service company dedicated to providing cutting-edge solutions to businesses of all sizes.With a focus on excellence and innovation,we offer a comprehensive range of tech services designed to optimize operations, enhance efficiency, and drive growth.</span></span>
+        <span className="font-semibold ">
+          Elevating businesses with innovative tech solutions for optimal efficiency and growth.
+        </span>
+      </span>
     </>
   ),
   callToAction: {
@@ -178,7 +182,6 @@ export const featuresHome: FeaturesProps = {
         href: '/',
       },
     },
-    
   ],
 };
 
@@ -187,8 +190,8 @@ export const contentHomeOne: ContentProps = {
   id: 'contentOne-on-home-one',
   hasBackground: true,
   header: {
-    title: "Revolutionize Your Business with Gooseberry technovision - Your Premier IT Services Partner!",
-    subtitle: "🌐 Discover Our Comprehensive IT Services",
+    title: 'Revolutionize Your Business with Gooseberry technovision - Your Premier IT Services Partner!',
+    subtitle: '🌐 Discover Our Comprehensive IT Services',
     // tagline: 'Content',
   },
   // content:
@@ -212,8 +215,6 @@ export const contentHomeOne: ContentProps = {
       "Unlock the power of the cloud with our scalable and secure cloud computing solutions. Seamlessly migrate, optimize, and manage your data for enhanced flexibility and efficiency.",
       icon: IconCloudComputing,
     },
-
-    
   ],
   image: {
     src: cameraFrontImg,
@@ -274,7 +275,7 @@ export const stepsHome: StepsProps = {
     {
       title: 'Expertise That Matters',
       description:
-        "Benefit from our team of seasoned IT professionals with diverse expertise. We stay ahead of industry trends to provide you with innovative and effective solutions.",
+        'Benefit from our team of seasoned IT professionals with diverse expertise. We stay ahead of industry trends to provide you with innovative and effective solutions.',
       icon: IconArrowDown,
     },
     {
@@ -291,7 +292,8 @@ export const stepsHome: StepsProps = {
     },
     {
       title: 'Strategic Partnerships',
-      description:"Gooseberry Technovision is more than a service provider; we're your strategic partner in achieving digital excellence. Together, we navigate the ever-evolving landscape of technology.",
+      description:
+        "Gooseberry Technovision is more than a service provider; we're your strategic partner in achieving digital excellence. Together, we navigate the ever-evolving landscape of technology.",
     },
   ],
 };
@@ -376,7 +378,7 @@ export const faqs2Home: FAQsProps = {
   header: {
     title: '🚀 Transform Your Business Today with us!',
     subtitle:
-      "Ready to embark on a journey of digital transformation? Contact us now for a personalized consultation. Gooseberry Technovision - Your Trusted IT Services Partner for a Future of Innovation and Growth! 🚀✨",
+      'Ready to embark on a journey of digital transformation? Contact us now for a personalized consultation. Gooseberry Technovision - Your Trusted IT Services Partner for a Future of Innovation and Growth! 🚀✨',
     tagline: 'FAQS',
   },
   items: [
@@ -390,7 +392,7 @@ export const faqs2Home: FAQsProps = {
       Gooseberry Technovision stands out in the IT service landscape by offering a potent blend of proactive expertise, customized solutions, and unwavering commitment to your success.`,
     },
     {
-      title: "How do you migrate my data to the cloud?",
+      title: 'How do you migrate my data to the cloud?',
       description: `Gooseberry Technovision seamlessly transfers your data using secure tools, minimizing downtime and ensuring smooth integration into your cloud environment.`,
     },
     {
@@ -622,23 +624,23 @@ export const contactHome: ContactProps = {
     // tagline: 'Contact',
   },
   content:
-    "Ready to take the leap into the future of digital innovation? Contact us now for a personalized consultation. Gooseberry Technovision - Your Trusted IT Services Partner, Driving Innovation, and Powering Growth! 🚀✨",
+    'Ready to take the leap into the future of digital innovation? Contact us now for a personalized consultation. Gooseberry Technovision - Your Trusted IT Services Partner, Driving Innovation, and Powering Growth! 🚀✨',
   items: [
     {
       title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      description: ['677, AGP Sowbhagyam, 6th Main Rd, Ram Nagar South, Madipakkam, Chennai, Tamil Nadu 600091'],
       icon: IconMapPin,
     },
     {
       title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: GTwebsite@gmail.com'],
+      description: ['Mobile: +1 (123) 456-7890', 'Mail: info@gooseberrytechnovision.com'],
       icon: IconPhoneCall,
     },
-      // {
-      //   title: 'Working hours',
-      //   description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
-      //   icon: IconClock,
-      // },
+    // {
+    //   title: 'Working hours',
+    //   description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
+    //   icon: IconClock,
+    // },
   ],
   form: {
     title: 'Ready to Get Started?',
@@ -671,9 +673,9 @@ export const contactHome: ContactProps = {
 
 // CallToAction data *******************
 export const callToAction2Home: CallToActionProps = {
-  title: 'Next.js + Tailwind CSS',
+  title: 'Innovation + Tech Excellence',
   subtitle:
-    'Aliquam sodales porttitor lacus ac tristique. Etiam posuere elit at leo feugiat sodales. Sed ac mauris quis sem tempor condimentum non at metus.',
+    'Gooseberry Technovision offers dynamic tech solutions, optimizing operations and driving growth for businesses through innovative and efficient services.',
   callToAction: {
     text: 'Get template',
     href: 'https://github.com/gtwebwork/GTwebsite',
@@ -682,17 +684,19 @@ export const callToAction2Home: CallToActionProps = {
   items: [
     {
       title: 'Website Creation',
-      description: 'Aliquam sodales est lectus, quis.',
+      description: 'Crafting engaging and responsive websites that captivate audiences and elevate online presence',
       href: 'https://github.com/gtwebwork/GTwebsite',
     },
     {
       title: 'AI Chatbots',
-      description: 'Class aptent taciti sociosqu ad litora torquent per conubia.',
+      description:
+        'AI chatbots: Revolutionizing communication with intelligent virtual assistants for seamless and personalized user interactions.',
       href: '/',
     },
     {
       title: 'Consultation',
-      description: 'Class aptent taciti sociosqu ad litora torquent per conubia.',
+      description:
+        'Expert consultation providing strategic insights to navigate challenges and optimize business processes for success.',
       href: '/',
     },
     // {

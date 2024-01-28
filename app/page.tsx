@@ -41,7 +41,7 @@ export default function Page() {
       <Content {...contentHomeOne} />
       <Content {...contentHomeTwo} />
       <Testimonials {...testimonialsHome} />
-      <Contact {...contactHome} />
+      {/* <Contact {...contactHome} /> */}
     </>
   );
 }
