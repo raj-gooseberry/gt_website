@@ -40,7 +40,7 @@ const Features4 = ({
       columns={columns}
       defaultColumns={4}
       containerClass={`mt-12 ${columns === 2 ? 'max-w-5xl' : ''}`}
-      panelClass={`flex max-w-full ${columns === 2 ? ' sm:max-w-md mx-auto' : ''}`}
+      panelClass={`flex max-w-full min-h-56 border-2 ${columns === 2 ? ' sm:max-w-md mx-auto' : ''}`}
       titleClass="text-lg font-semibold mb-2"
       descriptionClass="mt-0.5"
       iconClass="flex-shrink-0 mr-4 mt-1 w-6 h-6 text-primary-800 dark:text-primary-600"
