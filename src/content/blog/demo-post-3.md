@@ -1,8 +1,8 @@
 ---
-publishDate: 'Nov 02 2022'
+publishDate: 'Aug 17, 2019'
 title: 'Solving Real Life Business Case Using Supervised Learning with Tensorflow 2.0'
 description: 'Task: Creating a machine learning algorithm that can predict if a customer will buy again'
-excerpt: 'Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat'
+excerpt: ''
 image: 'https://miro.medium.com/v2/1*AUjS_z-F8nDk-3Ax4MRh0Q.jpeg'
 tags: [markdown, blog]
 ---
@@ -107,3 +107,5 @@ Please try out yourself and comment. Code is available in GITHUB
 Thank you..
 
 #TensorFlow #Tensorflow2 #MachineLearning #Overfitting #SupervisedLearning
+
+[[Move to top]](#top)

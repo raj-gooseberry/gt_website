@@ -3,7 +3,7 @@ publishDate: 'Nov 28, 2019'
 title: 'Deep Learning in simple words'
 description: 'Lorem ipsum dolor sit amet'
 excerpt: 'Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat'
-# image: 'https://miro.medium.com/v2/1*efLF3BSlcsq_wUpPPdx6cw.jpeg'
+image: 'https://miro.medium.com/v2/1*efLF3BSlcsq_wUpPPdx6cw.jpeg'
 tags: [markdown, blog]
 ---
 
