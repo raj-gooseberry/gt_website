@@ -310,8 +310,8 @@ export const testimonials2About: TestimonialsProps = {
   hasBackground: false,
   isTestimonialUp: true,
   header: {
-    title: 'Our success stories',
-    tagline: 'Customer comments',
+    title: 'What our customers say about us',
+    // tagline: 'Customer comments',
   },
   testimonials: [
     {

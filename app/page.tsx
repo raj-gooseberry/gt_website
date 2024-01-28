@@ -40,13 +40,13 @@ export default function Page() {
       <Hero {...heroHome} />
       <CallToAction {...callToAction2Home} />
       <SocialProof {...socialProofHome} />
-      <Features {...featuresHome} />     
+      <Features {...featuresHome} />
       <Content {...contentHomeOne} />
       <Content {...contentHomeTwo} />
       <Testimonials2 {...testimonials2About} />
       <Contact {...contactHome} />
       {/* <Testimonials {...testimonialsHome} /> */}
-      <Contact {...contactHome} />
+      {/* <Contact {...contactHome} /> */}
     </>
   );
 }
