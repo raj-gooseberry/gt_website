@@ -135,7 +135,7 @@ export const featuresHome: FeaturesProps = {
     {
       title: 'Web Devlopement',
       description:
-      'Drive success online with our top-notch web development services, crafting websites that captivate and convert',
+        'Drive success online with our top-notch web development services, crafting websites that captivate and convert',
       icon: IconWorld,
       callToAction: {
         text: 'Discover now',
@@ -145,7 +145,7 @@ export const featuresHome: FeaturesProps = {
     {
       title: 'Data Science',
       description:
-        "Transform your data into a valuable asset with our expert data science services, driving efficiency, and delivering measurable results",
+        'Transform your data into a valuable asset with our expert data science services, driving efficiency, and delivering measurable results',
       icon: IconChartGridDots,
       callToAction: {
         text: 'Discover now',
@@ -155,7 +155,7 @@ export const featuresHome: FeaturesProps = {
     {
       title: 'DevOps',
       description:
-      "Streamline your development and operations with cutting-edge DevOps solutions for enhanced efficiency and collaboration.",
+        'Streamline your development and operations with cutting-edge DevOps solutions for enhanced efficiency and collaboration.',
       icon: IconInfinity,
       callToAction: {
         text: 'Discover now',
@@ -165,7 +165,7 @@ export const featuresHome: FeaturesProps = {
     {
       title: 'Software Testing',
       description:
-        "Unlock the potential of your software with comprehensive testing strategies that guarantee top-tier quality and performance.",
+        'Unlock the potential of your software with comprehensive testing strategies that guarantee top-tier quality and performance.',
       icon: IconVirusSearch,
       callToAction: {
         text: 'Discover now',
@@ -175,7 +175,7 @@ export const featuresHome: FeaturesProps = {
     {
       title: 'A.I',
       description:
-      "Explore transformative A.I. capabilities that drive productivity and success, harnessing the potential of artificial intelligence for unparalleled results.",
+        'Explore transformative A.I. capabilities that drive productivity and success, harnessing the potential of artificial intelligence for unparalleled results.',
       icon: IconBinaryTree2,
       callToAction: {
         text: 'Discover now',
@@ -211,18 +211,18 @@ export const contentHomeOne: ContentProps = {
       title: 'Managed IT Services',
       description:
         "Ensure the seamless operation of your IT infrastructure with our proactive and responsive managed IT services. From 24/7 monitoring to rapid issue resolution, we've got your back",
-        icon: IconExchange,
+      icon: IconExchange,
     },
     {
       title: 'Cybersecurity Solutions',
       description:
-       "Safeguard your digital assets with our robust cybersecurity services. Our experts employ the latest strategies and technologies to protect your business from evolving cyber threats.",
-       icon: IconShieldLock,
+        'Safeguard your digital assets with our robust cybersecurity services. Our experts employ the latest strategies and technologies to protect your business from evolving cyber threats.',
+      icon: IconShieldLock,
     },
     {
       title: 'Cloud Computing',
       description:
-      "Unlock the power of the cloud with our scalable and secure cloud computing solutions. Seamlessly migrate, optimize, and manage your data for enhanced flexibility and efficiency.",
+        'Unlock the power of the cloud with our scalable and secure cloud computing solutions. Seamlessly migrate, optimize, and manage your data for enhanced flexibility and efficiency.',
       icon: IconCloudComputing,
     },
   ],
@@ -244,20 +244,20 @@ export const contentHomeTwo: ContentProps = {
     {
       title: 'IT Consulting',
       description:
-        "Leverage our seasoned IT consultants to devise a strategic roadmap for your digital transformation. We analyze, plan, and implement solutions that align with your business goals.",
-        icon: IconChartDots2,
+        'Leverage our seasoned IT consultants to devise a strategic roadmap for your digital transformation. We analyze, plan, and implement solutions that align with your business goals.',
+      icon: IconChartDots2,
     },
     {
       title: 'Network Infrastructure',
       description:
-        "Build a strong foundation for your digital success with our network infrastructure services. From design to implementation, we ensure a robust and high-performance network tailored to your needs.",
-        icon: IconTopologyStarRing,
+        'Build a strong foundation for your digital success with our network infrastructure services. From design to implementation, we ensure a robust and high-performance network tailored to your needs.',
+      icon: IconTopologyStarRing,
     },
     {
       title: 'Data Analytics',
       description:
-        "Harness the potential of your data with our advanced analytics services. Gain valuable insights, make informed decisions, and drive your business forward in the data-driven era.",
-        icon: IconChartHistogram,
+        'Harness the potential of your data with our advanced analytics services. Gain valuable insights, make informed decisions, and drive your business forward in the data-driven era.',
+      icon: IconChartHistogram,
     },
   ],
   image: {
@@ -381,7 +381,6 @@ export const testimonials2About: TestimonialsProps = {
     },
   ],
 };
-
 
 export const testimonialsHome: TestimonialsProps = {
   id: 'testimonials-on-home',
@@ -778,7 +777,8 @@ export const callToAction2Home: CallToActionProps = {
     },
     {
       title: 'Serverless',
-      description: 'Empower your innovation with hassle-free serverless solutions.',
+      description:
+        'Revolutionize your business with our serverless solutions – seamless, scalable, and tailored for your success.',
       href: '/',
     },
     // {
