@@ -9,14 +9,7 @@ const SocialProof = ({ images, id, hasBackground = false }: SocialProofProps) =>
         images.map(({ src, alt, link }, index) => (
           <div key={`item-social-proof-${index}`}>
             <a href={link} target="_blank" rel="noopener">
-              <Image
-                src={src}
-                alt={alt}
-                className="h-auto w-12 opacity-50 contrast-50 grayscale duration-75 hover:opacity-100 hover:contrast-100 hover:grayscale-0 md:w-16"
-                object-fit="contain"
-                width={64}
-                height={64}
-              />
+              <Image src={src} alt={alt} className="h-auto w-40 rounded-full m-10 hover:scale-105 bg-dark-200" object-fit="contain" width={64} height={64} />
             </a>
           </div>
         ))}

@@ -31,7 +31,7 @@ const Hero2 = ({ title, subtitle, tagline, callToAction, image }: HeroProps) => 
             <div className="relative m-auto h-full max-w-4xl object-cover">
               {image && (
                 <Image
-                  className="mx-auto h-full w-auto rounded-md bg-dark-400 object-cover drop-shadow-2xl dark:bg-dark-700"
+                  className="mx-auto h-full w-auto rounded-md bg-dark-400 object-cover drop-shadow-2xl dark:bg-dark-700 hover:scale-105"
                   src={image.src}
                   alt={image.alt}
                   width={540}

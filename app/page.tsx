@@ -26,7 +26,9 @@ import {
   stepsHome,
   teamHome,
   testimonialsHome,
+  testimonials2About,
 } from '~/shared/data/pages/home.data';
+import Testimonials2 from '~/components/widgets/Testimonials2';
 
 export const metadata: Metadata = {
   title: SITE.title,
@@ -37,10 +39,12 @@ export default function Page() {
     <>
       <Hero {...heroHome} />
       <CallToAction {...callToAction2Home} />
+      <SocialProof {...socialProofHome} />
       <Features {...featuresHome} />     
       <Content {...contentHomeOne} />
       <Content {...contentHomeTwo} />
-      <Testimonials {...testimonialsHome} />
+      <Testimonials2 {...testimonials2About} />
+      {/* <Testimonials {...testimonialsHome} /> */}
       {/* <Contact {...contactHome} /> */}
     </>
   );

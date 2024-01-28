@@ -36,6 +36,11 @@ import typescriptLogo from '~/assets/images/typescript-logo.png';
 import cameraFrontImg from '~/assets/images/hero5.jpg';
 import cameraBackImg from '~/assets/images/hero3.jpg';
 import gasImg from '~/assets/images/gas.jpg';
+import revanture from '~/assets/images/revanture.svg';
+import client1 from '~/assets/images/client1.svg';
+import client2 from '~/assets/images/client2.svg';
+import client3 from '~/assets/images/client3.svg';
+import client4 from '~/assets/images/client4.svg';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
@@ -72,24 +77,29 @@ export const socialProofHome: SocialProofProps = {
   hasBackground: false,
   images: [
     {
-      link: 'https://nextjs.org/',
-      src: nextJsLogo,
-      alt: 'NextJs Logo',
+      link: 'revanture',
+      src: revanture,
+      alt: 'revanture',
     },
     {
-      link: 'https://react.dev/',
-      src: reactLogo,
-      alt: 'React Logo',
+      link: 'client1',
+      src: client1,
+      alt: 'client1',
     },
     {
-      link: 'https://tailwindcss.com/',
-      src: tailwindCssLogo,
-      alt: 'Tailwind CSS Logo',
+      link: 'client2',
+      src: client2,
+      alt: 'client2',
     },
     {
-      link: 'https://www.typescriptlang.org/',
-      src: typescriptLogo,
-      alt: 'Typescript Logo',
+      link: 'client3',
+      src: client3,
+      alt: 'client3',
+    },
+    {
+      link: 'client4',
+      src: client4,
+      alt: 'client4',
     },
   ],
 };
@@ -281,6 +291,80 @@ export const stepsHome: StepsProps = {
 };
 
 // Testimonials data on Home page *******************
+
+export const testimonials2About: TestimonialsProps = {
+  id: 'testimonialsTwo-on-about',
+  hasBackground: true,
+  isTestimonialUp: true,
+  header: {
+    title: 'Our success stories',
+    tagline: 'Customer comments',
+  },
+  testimonials: [
+    {
+      name: 'Jane Smith',
+      job: 'UX Designer',
+      testimonial: `Your templates have been a game-changer for my projects. They're not just beautifully designed; they're also incredibly easy to customize. Thanks to your templates, I've been able to save time and deliver stunning websites to my clients.`,
+      image: {
+        src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        alt: 'Jane Smith',
+      },
+      href: '/',
+    },
+    {
+      name: 'John Doe',
+      job: 'Frontend Developer',
+      testimonial: `I can't say enough good things about your Next.js and Tailwind CSS templates. As a frontend developer, I appreciate the clean and well-organized code. These templates have significantly sped up my development process, and the results are always impressive.`,
+      image: {
+        src: 'https://images.unsplash.com/photo-1565049786474-1dea82a8b995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        alt: 'John Doe',
+      },
+      href: '/',
+    },
+    {
+      name: 'Emily Turner',
+      job: 'Marketing Manager',
+      testimonial: `This templates have made our marketing campaigns stand out. The responsiveness and performance of the websites we've built with them have boosted our conversion rates. Thank you for helping us shine in the digital world!`,
+      image: {
+        src: 'https://images.unsplash.com/photo-1659057106920-da022cfbc0cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        alt: 'Emily Turner',
+      },
+      href: '/',
+    },
+    {
+      name: 'Michael Clark',
+      job: 'Startup Founder',
+      testimonial: `I stumbled upon your templates while looking for a way to launch my startup quickly. Your templates not only saved me valuable time but also gave my business a professional and modern online presence. Highly recommended!`,
+      image: {
+        src: 'https://images.unsplash.com/photo-1572417884940-c24659be6068?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        alt: 'Michael Clark',
+      },
+      href: '/',
+    },
+    {
+      name: 'Linda Johnson',
+      job: 'Freelance Web Designer',
+      testimonial: `I've been using your templates for my freelance projects, and my clients are always thrilled with the results. The templates are not only visually appealing but also user-friendly, making my job much easier.`,
+      image: {
+        src: 'https://images.unsplash.com/photo-1694287877106-ee22f764aef1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        alt: 'Linda Johnson',
+      },
+      href: '/',
+    },
+    {
+      name: 'David Rogers',
+      job: 'E-commerce Entrepreneur',
+      testimonial: `The speed and SEO-friendliness of the websites I've built with these templates have led to increased traffic and sales. I couldn't be happier!`,
+      image: {
+        src: 'https://images.unsplash.com/photo-1665984867752-6370ab5ae35e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        alt: 'David Rogers',
+      },
+      href: '/',
+    },
+  ],
+};
+
+
 export const testimonialsHome: TestimonialsProps = {
   id: 'testimonials-on-home',
   hasBackground: true,
@@ -665,20 +749,18 @@ export const callToAction2Home: CallToActionProps = {
   },
   items: [
     {
-      title: 'Website Creation',
-      description: 'Crafting engaging and responsive websites that captivate audiences and elevate online presence',
+      title: 'Micro-Frontend',
+      description: 'Elevate software with our micro-frontend service for modular and scalable solutions.',
       href: 'https://github.com/gtwebwork/GTwebsite',
     },
     {
       title: 'AI Chatbots',
-      description:
-        'AI chatbots: Revolutionizing communication with intelligent virtual assistants for seamless and personalized user interactions.',
+      description: 'Boost customer engagement with our AI chatbots for unparalleled experiences.',
       href: '/',
     },
     {
-      title: 'Consultation',
-      description:
-        'Expert consultation providing strategic insights to navigate challenges and optimize business processes for success.',
+      title: 'Serverless',
+      description: 'Empower your innovation with hassle-free serverless solutions.',
       href: '/',
     },
     // {
