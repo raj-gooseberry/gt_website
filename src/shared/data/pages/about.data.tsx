@@ -42,11 +42,11 @@ export const hero2About: HeroProps = {
   subtitle:
     'Vivamus venenatis, lectus a pellentesque placerat, felis tellus ultrices eros, et aliquam sapien nibh sed sem. Fusce ut ante eget purus viverra malesuada. Morbi eget mi maximus, ultricies urna eget, tristique lorem. Fusce cursus venenatis quam, a blandit lectus vulputate id. Praesent id interdum orci, vitae condimentum dui.',
   tagline: 'About Us Demo Page',
-  callToAction: {
-    text: 'View jobs',
-    href: 'https://www.linkedin.com/',
-    targetBlank: true,
-  },
+  // callToAction: {
+  //   text: 'View jobs',
+  //   href: 'https://www.linkedin.com/',
+  //   targetBlank: true,
+  // },
   callToAction2: {
     text: 'Contact us',
     href: '/contact',
@@ -187,7 +187,7 @@ export const stepsAbout: StepsProps = {
 // Features3 data on About page *******************
 export const features3About: FeaturesProps = {
   id: 'featuresThree-on-about',
-  hasBackground: false,
+  hasBackground: true,
   columns: 3,
   header: {
     title: 'Our culture',

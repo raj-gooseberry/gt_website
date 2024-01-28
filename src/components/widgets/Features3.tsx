@@ -27,8 +27,8 @@ const Features3 = ({
       defaultColumns={3}
       panelClass="card h-full relative flex flex-col text-center p-8"
       iconClass="h-12 w-12 flex justify-center items-center rounded-md text-tertiary-100 bg-primary-900 mb-6 p-2 md:p-3 mx-auto"
-      titleClass="mb-3 text-xl font-bold"
-      descriptionClass="text-dark-600 dark:text-dark-400"
+      titleClass="mb-3 text-xl font-bold text-dark-700 dark:text-dark-200"
+      descriptionClass="text-dark-500 dark:text-dark-50"
     />
   </WidgetWrapper>
 );
