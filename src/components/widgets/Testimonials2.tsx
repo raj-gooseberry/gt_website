@@ -28,7 +28,7 @@ const Testimonials2 = ({ header, testimonials, isTestimonialUp, id, hasBackgroun
   return (
     <WidgetWrapper id={id ? id : ''} hasBackground={hasBackground} containerClass="">
       {header && <Headline header={header} titleClass="text-2xl sm:text-3xl" />}
-      <div className="card flex overflow-hidden mx-auto max-w-6xl">
+      <div className="border-none card flex overflow-hidden mx-auto max-w-6xl">
         {testimonials.map(
           ({ name, job, testimonial, image }, index) =>
             testimonial && (

@@ -331,6 +331,7 @@ type StatsProps = Widget & {
 };
 
 type SocialProofProps = Widget & {
+  title?: string | ReactElement;
   images: Array<Image>;
 };
 

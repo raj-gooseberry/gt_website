@@ -15,9 +15,7 @@ const Hero2 = ({ title, subtitle, tagline, callToAction, image }: HeroProps) => 
                 </p>
               )}
               {title && (
-                <h1 className="leading-tighter font-heading mb-4 text-5xl font-bold tracking-tighter px-0">
-                  {title}
-                </h1>
+                <h1 className="leading-tighter font-heading mb-4 text-5xl font-bold tracking-tighter px-0">{title}</h1>
               )}
               <div className="mx-auto max-w-3xl">
                 {subtitle && <p className="mb-8 text-xl font-normal text-dark-600 dark:text-dark-400">{subtitle}</p>}

@@ -87,6 +87,7 @@ export const heroHome: HeroProps = {
 export const socialProofHome: SocialProofProps = {
   id: 'socialProof-on-home',
   hasBackground: false,
+  title: 'Our Clients',
   images: [
     {
       // link: 'client1',
@@ -765,7 +766,7 @@ export const callToAction2Home: CallToActionProps = {
     {
       title: 'Micro-Frontend',
       description: 'Elevate software with our micro-frontend service for modular and scalable solutions.',
-      href: 'https://github.com/gtwebwork/GTwebsite',
+      href: '../../blog/demo-post-1',
     },
     {
       title: 'AI Chatbots',
