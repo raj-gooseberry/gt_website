@@ -20,19 +20,20 @@ import {
 import heroImg from '~/assets/images/hero.jpg';
 import cameraFrontImg from '~/assets/images/camera-front.jpg';
 import cameraBackImg from '~/assets/images/camera-back.jpg';
+import softwareDev from '~/assets/images/softwareDevelopement.jpg';
 
 // Hero data on Services page *******************
 export const heroServices: HeroProps = {
-  title: 'Elevate your projects with our stunning templates',
+  title: 'Software Developement',
   subtitle:
-    'Donec aliquam pharetra nibh quis vestibulum. Praesent hendrerit sem at lacus ullamcorper egestas. Morbi lacinia ipsum in nulla gravida, ac sagittis turpis pretium. ',
-  callToAction: {
-    text: 'Start Exploring',
-    href: 'https://github.com/gtwebwork/gtwebsite',
-    targetBlank: true,
-  },
+    'Welcome to Gooseberry Technovision, where innovation meets excellence in software development for service-based solutions. Our expert team crafts cutting-edge applications, ensuring seamless user experiences and top-tier performance. Elevate your digital presence with Gooseberry Technovision - your trusted partner in creating scalable, SEO-optimized software solutions.',
+  // callToAction: {
+  //   text: 'Start Exploring',
+  //   href: 'https://github.com/gtwebwork/gtwebsite',
+  //   targetBlank: true,
+  // },
   image: {
-    src: heroImg,
+    src: softwareDev,
     alt: 'Hero gtwebsite',
   },
 };
@@ -41,38 +42,38 @@ export const heroServices: HeroProps = {
 export const features2Services: FeaturesProps = {
   id: 'featuresTwo-on-services',
   header: {
-    title: 'Our Services',
+    title: 'Software Developement',
   },
   items: [
     {
-      title: 'Next.Js + Tailwind CSS Integration',
-      description: 'Nullam non sodales massa. Ut justo neque, elementum et vehicula vel, pellentesque non orci.',
+      title: 'Web Application Development',
+      description: 'Crafting responsive and dynamic web applications for enhanced online presence.',
       icon: IconBrandTailwind,
     },
     {
-      title: 'Ready-to-use Components',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: 'Mobile App Development',
+      description: 'Creating intuitive and feature-rich mobile applications for iOS and Android platforms.',
       icon: IconComponents,
     },
     {
-      title: 'Best Practices',
-      description: 'Morbi sit amet arcu vitae metus molestie auctor sit amet in risus. Sed vel lacinia purus.',
+      title: 'UI/UX Design',
+      description: 'Ensuring engaging and user-friendly interfaces for optimal user experiences.',
       icon: IconListCheck,
     },
     {
-      title: 'Excellent Page Speed',
-      description: 'Phasellus id cursus urna. Nullam feugiat tellus sed euismod venenatis.',
+      title: 'Integration Services',
+      description: 'Seamlessly integrating diverse systems and applications for enhanced functionality.',
       icon: IconRocket,
     },
     {
       title: 'Search Engine Optimization (SEO)',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+        "Boost online visibility with our SEO-friendly website. Effective strategies and practices enhance your website's search engine ranking, making it easier for users to find your content.",
       icon: IconArrowsRightLeft,
     },
     {
-      title: 'Open to new ideas and contributions',
-      description: 'Maecenas urna augue, commodo vitae lectus euismod, tempor aliquam arcu.',
+      title: 'Maintenance and Support',
+      description: 'Providing ongoing support and maintenance to ensure software longevity and smooth operation.',
       icon: IconBulb,
     },
   ],
@@ -151,7 +152,7 @@ export const features4Services: FeaturesProps = {
   header: {
     title: 'Main Features',
     subtitle:
-      'Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.',
+      'Elevate your digital presence with Gooseberry Technovision - your trusted partner in creating scalable, SEO-optimized software solutions.',
   },
   isImageDisplayed: true,
   image: {
@@ -160,34 +161,33 @@ export const features4Services: FeaturesProps = {
   },
   items: [
     {
-      title: 'Next.Js + Tailwind CSS Integration',
-      description: 'Nullam non sodales massa. Ut justo neque, elementum et vehicula vel, pellentesque non orci.',
+      title: 'Customization',
+      description: 'Tailoring software solutions to meet the unique needs and requirements of each client.',
       icon: IconBrandTailwind,
     },
     {
-      title: 'Ready-to-use Components',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: 'User-Friendly Interfaces',
+      description: 'Creating intuitive and user-friendly interfaces to enhance the overall user experience.',
       icon: IconComponents,
     },
     {
-      title: 'Best Practices',
-      description: 'Morbi sit amet arcu vitae metus molestie auctor sit amet in risus. Sed vel lacinia purus.',
+      title: 'Integration Capabilities',
+      description: 'Enabling seamless integration with existing systems and third-party applications.',
       icon: IconListCheck,
     },
     {
-      title: 'Excellent Page Speed',
-      description: 'Phasellus id cursus urna. Nullam feugiat tellus sed euismod venenatis.',
+      title: 'Cross-Platform Compatibility',
+      description: 'Developing software that works seamlessly across various devices and operating systems.',
       icon: IconRocket,
     },
     {
-      title: 'Search Engine Optimization (SEO)',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+      title: 'Agile Development Methodology',
+      description: 'Embracing agile practices to enhance collaboration, flexibility, and responsiveness to changes.',
       icon: IconArrowsRightLeft,
     },
     {
-      title: 'Open to new ideas and contributions',
-      description: 'Maecenas urna augue, commodo vitae lectus euismod, tempor aliquam arcu.',
+      title: 'Continuous Updates and Maintenance',
+      description: 'Providing ongoing support, updates, and maintenance to keep the software current and reliable.',
       icon: IconBulb,
     },
   ],
@@ -254,23 +254,23 @@ export const faqsServices: FAQsProps = {
   columns: 1,
   items: [
     {
-      title: 'Can I customize the templates to match my brand?',
-      description: `Ut accumsan, massa at sagittis maximus, libero justo rhoncus metus, quis finibus neque justo quis nisi. Suspendisse sed sapien et justo iaculis faucibus.`,
+      title: 'How long does it take to develop custom software?',
+      description: `The timeline varies based on project complexity. We conduct a thorough analysis to provide accurate time estimates.`,
       icon: IconChevronsRight,
     },
     {
-      title: 'What if I need help customizing the template?',
-      description: `Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent imperdiet ultricies ex consequat egestas.`,
+      title: 'How do you ensure data security in your applications?',
+      description: `We employ robust encryption, secure coding practices, and regular security audits to safeguard data against potential threats.`,
       icon: IconChevronsRight,
     },
     {
-      title: 'Are there setup guides available?',
-      description: `Mauris vitae eros a dui varius luctus. Suspendisse rutrum, sapien nec blandit bibendum, justo sapien sollicitudin erat, id aliquam sapien purus quis leo. Aliquam vulputate vestibulum consectetur.`,
+      title: 'Can you integrate the software with existing systems?',
+      description: `Absolutely. Our team specializes in seamless integration to ensure smooth interoperability with your current systems.`,
       icon: IconChevronsRight,
     },
     {
-      title: 'Can I hire you for template customization?',
-      description: `Phasellus est quam, mollis tincidunt dictum pulvinar, tempor vel justo. Mauris eu lobortis leo. Proin pretium arcu lectus, a mattis nisi fermentum quis.`,
+      title: 'How do you ensure the scalability of the software?',
+      description: `Our development process includes scalability considerations, allowing the software to grow with your business needs through efficient architecture and coding practices.`,
       icon: IconChevronsRight,
     },
   ],
@@ -282,7 +282,7 @@ export const callToActionServices: CallToActionProps = {
   hasBackground: false,
   title: 'Still have questions?',
   subtitle:
-    'Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut in leo odio. Cras finibus ex a ante convallis ullamcorper.',
+    'Explore our comprehensive FAQ section to find answers to all your inquiries about our software development services, ensuring clarity and transparency in every aspect of your project.',
   callToAction: {
     text: 'Contact us',
     href: '/contact',

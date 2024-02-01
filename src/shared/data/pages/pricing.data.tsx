@@ -1,113 +1,163 @@
 import { ComparisonProps, FAQsProps, PricingProps } from '~/shared/types';
 import { HeroProps } from '~/shared/types';
+import { FeaturesProps } from '~/shared/types';
+import Devops from '~/assets/images/DevOps.png';
+import {
+  IconArrowsRightLeft,
+  IconBrandTailwind,
+  IconBulb,
+  IconChevronsRight,
+  IconComponents,
+  IconListCheck,
+  IconRocket,
+} from '@tabler/icons-react';
+import { CallToActionProps } from '~/shared/types';
 
 // Hero data on Pricing page *******************
 export const heroPricing: HeroProps = {
-  title: 'Plans and Prices',
+  title: 'DevOps',
   subtitle: (
     <>
       <span className="hidden md:inline">
-        {`Here, you'll find a clear breakdown of our service plans and their respective features. Whether you're a small
-        business or a large enterprise, we have options tailored to your needs.`}
+        {`DevOps, an amalgamation of development and operations, enhances collaboration and productivity in software development.`}
       </span>{' '}
       You can choose the plan that best suits your goals!
     </>
   ),
-  tagline: 'Demo Pricing Page',
+  image: {
+    src: Devops,
+    alt: 'Hero gtwebsite',
+  },
+  // tagline: 'DevOps',
 };
 
 // Pricing data on Pricing page *******************
-export const pricingPricing: PricingProps = {
-  id: 'pricing-on-pricing',
+// Feature2 data on Services page *******************
+export const features2Services: FeaturesProps = {
+  id: 'featuresTwo-on-services',
+  header: {
+    title: 'Our Services',
+  },
+  items: [
+    {
+      title: 'Continuous Integration (CI)/Continuous Deployment (CD)',
+      description:
+        'Streamlining code integration and automated deployment for faster and more reliable software releases.',
+      icon: IconBrandTailwind,
+    },
+    {
+      title: 'Infrastructure as Code (IaC)',
+      description: 'Automating infrastructure provisioning and management to achieve consistency and scalability.',
+      icon: IconComponents,
+    },
+    {
+      title: 'Containerization',
+      description: 'Utilizing Docker and Kubernetes for efficient application deployment, scalability, and management.',
+      icon: IconListCheck,
+    },
+    {
+      title: 'Automated Testing',
+      description: 'Integration of automated testing tools for efficient and reliable testing processes.',
+      icon: IconRocket,
+    },
+    {
+      title: 'Security Automation',
+      description:
+        'Integrating security measures into the development pipeline, ensuring a secure software development lifecycle.Integrating security measures into the development pipeline, ensuring a secure software development lifecycle.',
+      icon: IconArrowsRightLeft,
+    },
+    {
+      title: 'Continuous Feedback',
+      description: ' Implementing feedback loops to gather insights and improve the development process continually.',
+      icon: IconBulb,
+    },
+  ],
+};
+
+// Feature4 data on Services page *******************
+export const features4Services: FeaturesProps = {
+  id: 'featuresFour-on-services',
+  hasBackground: true,
+  columns: 2,
+  header: {
+    title: 'Main Features',
+    subtitle:
+      'Elevate your digital presence with Gooseberry Technovision - your trusted partner in creating scalable, SEO-optimized software solutions.',
+  },
+  isImageDisplayed: true,
+  image: {
+    src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80',
+    alt: 'Hero gtwebsite',
+  },
+  items: [
+    {
+      title: 'Continuous Integration (CI)',
+      description:
+        'Automating the process of integrating code changes from multiple contributors into a shared repository. This ensures that code is regularly built and tested, reducing integration issues.',
+      icon: IconBrandTailwind,
+    },
+    {
+      title: 'Continuous Deployment (CD)',
+      description:
+        'Automating the deployment of code changes to production environments, allowing for faster and more reliable releases.',
+      icon: IconComponents,
+    },
+    {
+      title: 'Infrastructure as Code (IaC)',
+      description:
+        'Managing and provisioning infrastructure through code, enabling consistent and repeatable deployments. Tools like Terraform and Ansible are commonly used.',
+      icon: IconListCheck,
+    },
+    {
+      title: 'Containerization',
+      description:
+        'Using container technologies like Docker to package and isolate applications and their dependencies, providing consistency across different environments.',
+      icon: IconRocket,
+    },
+    {
+      title: 'Collaborative Development',
+      description:
+        'Fostering collaboration and communication between development, operations, and other stakeholders throughout the software development lifecycle.',
+      icon: IconArrowsRightLeft,
+    },
+    {
+      title: 'Version Control',
+      description:
+        'Using version control systems, such as Git, to track changes, manage code versions, and facilitate collaboration among team members.',
+      icon: IconBulb,
+    },
+  ],
+};
+
+// FAQS data on Services page *******************
+export const faqsServices: FAQsProps = {
+  id: 'faqs-on-services',
   hasBackground: true,
   header: {
-    title: 'Our plans',
-    subtitle: (
-      <>
-        Discover our flexible pricing options designed to fit your needs perfectly.{' '}
-        <span className="hidden md:inline">{`No matter the size of your project, we have the right plan for you.`}</span>
-      </>
-    ),
+    title: 'Answers to Common Queries',
+    subtitle: '',
   },
-  prices: [
+  columns: 1,
+  items: [
     {
-      title: 'basic',
-      subtitle: 'Optimal choice for personal use',
-      price: 29,
-      period: 'per month',
-      items: [
-        {
-          description: 'Access to a selection of professionally designed website templates.',
-        },
-        {
-          description: 'Email support to assist you with any questions or issues.',
-        },
-        {
-          description: 'Adequate storage space for small to medium-sized websites.',
-        },
-        {
-          description: 'Core features for a functional online presence, such as SEO tools and contact forms.',
-        },
-      ],
-      callToAction: {
-        targetBlank: true,
-        text: 'Free 7-day trial',
-        href: '/',
-      },
-      hasRibbon: false,
+      title: 'How can DevOps automation improve our software development process?',
+      description: `Leverage Gooseberry Technovision's DevOps automation solutions to streamline workflows, from continuous integration to deployment. Enhance code quality, reduce errors, and expedite release cycles with our robust automation frameworks.`,
+      icon: IconChevronsRight,
     },
     {
-      title: 'standard',
-      subtitle: 'Optimal choice for small teams',
-      price: 69,
-      period: 'per month',
-      items: [
-        {
-          description: 'A larger variety of premium website templates to choose from.',
-        },
-        {
-          description: 'Faster response times and priority customer support.',
-        },
-        {
-          description: 'More storage space to accommodate growing websites and content.',
-        },
-        {
-          description: 'Enable e-commerce capabilities to sell products or services online.',
-        },
-      ],
-      callToAction: {
-        targetBlank: true,
-        text: 'Free 15-day trial',
-        href: '/',
-      },
-      hasRibbon: true,
-      ribbonTitle: 'Popular',
+      title: 'What role does Continuous Integration (CI) play in DevOps practices?',
+      description: `Gooseberry Technovision employs CI to automate code integration, ensuring a consistent and error-free codebase. Experience faster development cycles and reliable builds with our comprehensive CI solutions.`,
+      icon: IconChevronsRight,
     },
     {
-      title: 'premium',
-      subtitle: 'Optimal choice for companies',
-      price: 199,
-      period: 'per month',
-      items: [
-        {
-          description: 'Access to exclusive and customizable premium website templates.',
-        },
-        {
-          description: 'Round-the-clock customer support for immediate assistance.',
-        },
-        {
-          description: 'No limits on storage, ideal for extensive websites and media.',
-        },
-        {
-          description: 'Advanced SEO, analytics, and marketing tools for optimal performance and growth.',
-        },
-      ],
-      callToAction: {
-        targetBlank: true,
-        text: 'Free 30-day trial',
-        href: '/',
-      },
-      hasRibbon: false,
+      title: 'How does Gooseberry Technovision ensure security in DevOps processes?',
+      description: `Security is paramount in our DevOps approach. We integrate robust security measures into the entire development pipeline, providing proactive protection for your applications and infrastructure.`,
+      icon: IconChevronsRight,
+    },
+    {
+      title: 'Can Gooseberry Technovision assist in setting up Infrastructure as Code (IaC)?',
+      description: `Yes, empower your business with Infrastructure as Code (IaC) expertise from Gooseberry Technovision. Achieve consistent and scalable infrastructure deployments, reducing manual errors and enhancing agility.`,
+      icon: IconChevronsRight,
     },
   ],
 };
@@ -266,6 +316,19 @@ export const faqs3Pricing: FAQsProps = {
       description: `Nullam imperdiet sapien tincidunt erat dapibus faucibus. Vestibulum a sem nec lorem imperdiet scelerisque non sed lacus. Ut pulvinar id diam vitae auctor. Nam tempus, neque et elementum consectetur, ex ipsum pulvinar risus, vel sodales ligula tortor eu eros.`,
     },
   ],
+  callToAction: {
+    text: 'Contact us',
+    href: '/contact',
+  },
+};
+
+// CallToAction data on Services page *******************
+export const callToActionServices: CallToActionProps = {
+  id: 'callToAction-on-services',
+  hasBackground: false,
+  title: 'Still have questions?',
+  subtitle:
+    'Explore our comprehensive FAQ section to find answers to all your inquiries about our software development services, ensuring clarity and transparency in every aspect of your project.',
   callToAction: {
     text: 'Contact us',
     href: '/contact',

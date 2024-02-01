@@ -4,19 +4,36 @@ import Hero from '~/components/widgets/Hero';
 import Pricing from '~/components/widgets/Pricing';
 import Comparison from '~/components/widgets/Comparison';
 import FAQs3 from '~/components/widgets/FAQs3';
-import { heroPricing, comparisonPricing, faqs3Pricing, pricingPricing } from '~/shared/data/pages/pricing.data';
+import Features2 from '~/components/widgets/Features2';
+import FAQs from '~/components/widgets/FAQs';
+import Features4 from '~/components/widgets/Features4';
+import CallToAction from '~/components/widgets/CallToAction';
+import {
+  heroPricing,
+  comparisonPricing,
+  faqs3Pricing,
+  features2Services,
+  features4Services,
+  faqsServices,
+  callToActionServices,
+} from '~/shared/data/pages/pricing.data';
 
 export const metadata: Metadata = {
-  title: 'Pricing',
+  title: 'Devops',
 };
 
 const Page = () => {
   return (
     <>
       <Hero {...heroPricing} />
-      <Pricing {...pricingPricing} />
-      <Comparison {...comparisonPricing} />
-      <FAQs3 {...faqs3Pricing} />
+      <Features2 {...features2Services} />
+      <Features4 {...features4Services} />
+      <FAQs {...faqsServices} />
+      <CallToAction {...callToActionServices} />
+
+      {/* <Pricing {...pricingPricing} /> */}
+      {/* <Comparison {...comparisonPricing} /> */}
+      {/* <FAQs3 {...faqs3Pricing} /> */}
     </>
   );
 };

@@ -111,6 +111,7 @@ type Item = {
   title?: string | boolean | number;
   description?: string | Array<string>;
   href?: string;
+  slug?:string;
   form?: SmallForm;
   icon?: Icon;
   callToAction?: CallToActionType;

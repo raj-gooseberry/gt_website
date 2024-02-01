@@ -766,7 +766,7 @@ export const callToAction2Home: CallToActionProps = {
     {
       title: 'Micro-Frontend',
       description: 'Elevate software with our micro-frontend service for modular and scalable solutions.',
-      href: '../../blog/demo-post-1',
+      href: '/',
     },
     {
       title: 'AI Chatbots',

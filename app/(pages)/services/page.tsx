@@ -18,7 +18,7 @@ import {
 } from '~/shared/data/pages/services.data';
 
 export const metadata: Metadata = {
-  title: 'Services',
+  title: 'Software Developement',
 };
 
 const Page = () => {
@@ -26,10 +26,10 @@ const Page = () => {
     <>
       <Hero {...heroServices} />
       <Features2 {...features2Services} />
-      <Content {...contentServicesOne} />
-      <Content {...contentServicesTwo} />
+      {/* <Content {...contentServicesOne} /> */}
+      {/* <Content {...contentServicesTwo} /> */}
       <Features4 {...features4Services} />
-      <Testimonials {...testimonialsServices} />
+      {/* <Testimonials {...testimonialsServices} /> */}
       <FAQs {...faqsServices} />
       <CallToAction {...callToActionServices} />
     </>
