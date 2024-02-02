@@ -17,15 +17,15 @@ export const headerData: HeaderProps = {
       links: [
         {
           label: 'Software Development',
-          href: '/services',
+          href: '/SoftwareDev',
         },
         {
           label: 'DevOps',
-          href: '/pricing',
+          href: '/Devops',
         },
         {
           label: 'AI Services',
-          href: '/about',
+          href: '/AI',
         },
         {
           label: 'Support',
@@ -52,7 +52,7 @@ export const headerData: HeaderProps = {
     {
       label: 'Insights',
       href: '/blog',
-    }
+    },
   ],
   actions: [
     {

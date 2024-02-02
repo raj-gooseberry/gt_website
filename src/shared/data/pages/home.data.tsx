@@ -766,18 +766,18 @@ export const callToAction2Home: CallToActionProps = {
     {
       title: 'Micro-Frontend',
       description: 'Elevate software with our micro-frontend service for modular and scalable solutions.',
-      href: '/',
+      href: '/demo-post-3',
     },
     {
       title: 'AI Chatbots',
       description: 'Boost customer engagement with our AI chatbots for unparalleled experiences.',
-      href: '/',
+      href: '/demo-post-4',
     },
     {
       title: 'Serverless',
       description:
         'Revolutionize your business with our serverless solutions – seamless, scalable, and tailored for your success.',
-      href: '/',
+      href: '/demo-post-1',
     },
     // {
     //   title: 'Subscribe',
