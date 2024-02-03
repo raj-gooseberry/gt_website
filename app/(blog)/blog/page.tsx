@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default async function Home({}) {
   const posts = await findLatestPosts();
   return (
-    <section className="mx-auto max-w-3xl px-6 py-12 sm:px-6 sm:py-16 lg:py-20">
+    <section className="mx-auto max-w-7xl px-6 py-12 sm:px-6 sm:py-16 lg:py-20">
       <header>
         <h1 className="hover:underline transition-all duration-300 ease-in-out leading-tighter font-heading mb-8 text-center text-4xl font-bold tracking-tighter md:mb-16 md:text-6xl">
           Our Blogs
@@ -22,7 +22,7 @@ export default async function Home({}) {
           satisfaction guaranteed.
         </p>
       </header>
-      <div className="grid grid-cols-1 gap-6  p-4 md:p-0 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-6  p-4 md:p-0 lg:grid-cols-3">
         {posts.map(({ slug, title, image }: { slug: string; title: string; image: string }) => (
           <div
             key={slug}
