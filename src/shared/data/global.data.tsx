@@ -221,7 +221,7 @@ export const footerData2: FooterProps = {
   columns: [
     {
       title: 'Address',
-      texts: ['51 Phasellus Avenue Maecenas', 'Aliquam, AQ 52098'],
+      texts: ['677, AGP Sowbhagyam, 6th Main Rd, Ram Nagar', 'South, Madipakkam, Chennai, Tamil Nadu 600091'],
     },
     {
       title: 'Phone',
@@ -229,7 +229,7 @@ export const footerData2: FooterProps = {
     },
     {
       title: 'Email',
-      texts: ['Office: info@example.com', 'Site: https://example.com'],
+      texts: ['Office: info@gooseberrytechnovision.com', 'Site: www.gooseberrytechnovision.com'],
     },
   ],
   socials: [

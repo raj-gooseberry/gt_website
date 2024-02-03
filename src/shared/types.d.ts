@@ -92,11 +92,11 @@ type SmallForm = {
 type FormProps = {
   title?: string;
   description?: string;
-  inputs: Array<Input>;
+  inputs?: Array<Input>;
   radioBtns?: RadioBtn;
   textarea?: Textarea;
   checkboxes?: Array<Checkbox>;
-  btn: Button;
+  btn?: Button;
   btnPosition?: 'center' | 'right' | 'left';
   containerClass?: string;
 };
