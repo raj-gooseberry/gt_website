@@ -723,33 +723,33 @@ export const contactHome: ContactProps = {
     //   icon: IconClock,
     // },
   ],
-  form: {
-    title: 'Ready to Get Started?',
-    inputs: [
-      {
-        type: 'text',
-        name: 'name',
-        autocomplete: 'off',
-        placeholder: 'Your name',
-      },
-      {
-        type: 'email',
-        name: 'email',
-        autocomplete: 'on',
-        placeholder: 'Your email address',
-      },
-    ],
-    textarea: {
-      cols: 30,
-      rows: 5,
-      name: 'textarea',
-      placeholder: 'Write your message...',
-    },
-    btn: {
-      title: 'Send Message',
-      type: 'submit',
-    },
-  },
+  // form: {
+  //   title: 'Ready to Get Started?',
+  //   inputs: [
+  //     {
+  //       type: 'text',
+  //       name: 'name',
+  //       autocomplete: 'off',
+  //       placeholder: 'Your name',
+  //     },
+  //     {
+  //       type: 'email',
+  //       name: 'email',
+  //       autocomplete: 'on',
+  //       placeholder: 'Your email address',
+  //     },
+  //   ],
+  //   textarea: {
+  //     cols: 30,
+  //     rows: 5,
+  //     name: 'textarea',
+  //     placeholder: 'Write your message...',
+  //   },
+  //   btn: {
+  //     title: 'Send Message',
+  //     type: 'submit',
+  //   },
+  // },
 };
 
 // CallToAction data *******************

@@ -1,4 +1,4 @@
-import Form from '../common/Form';
+// import Form from '../common/Form';
 import Headline from '../common/Headline';
 import { ContactProps } from '~/shared/types';
 import WidgetWrapper from '../common/WidgetWrapper';
@@ -36,7 +36,7 @@ const Contact = ({ header, content, items, form, id, hasBackground = false }: Co
               ))}
           </ul>
         </div>
-        <Form {...form} containerClass="card h-fit max-w-2xl mx-auto p-5 md:p-12" btnPosition="center" />
+        {/* <Form {...form} containerClass="card h-fit max-w-2xl mx-auto p-5 md:p-12" btnPosition="center" /> */}
       </div>
     </div>
   </WidgetWrapper>
