@@ -73,7 +73,7 @@ export const heroHome: HeroProps = {
   ),
   callToAction: {
     text: 'Explore more',
-    href: 'https://github.com/gtwebwork/GTwebsite',
+    href: 'about',
     icon: IconArrowMoveRight,
     targetBlank: true,
   },
