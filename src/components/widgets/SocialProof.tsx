@@ -9,7 +9,7 @@ const SocialProof = ({ title, images, id, hasBackground = false }: SocialProofPr
         {title}
       </h1>
     )}
-    <div className="flex items-center justify-center gap-6 md:gap-6">
+    <div className="flex items-center justify-center gap-6 md:gap-9">
       {images &&
         images.map(({ src, alt, link }, index) => (
           <div key={`item-social-proof-${index}`}>
