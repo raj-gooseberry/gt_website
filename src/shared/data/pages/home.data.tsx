@@ -56,12 +56,7 @@ import client4 from '~/assets/images/client4.png';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
-  title: (
-    <>
-      Innovate.<span className="hidden md:inline">Elevate.</span>
-      <span>Dominate</span>
-    </>
-  ),
+  title: <>Innovate Elevate Dominate</>,
   subtitle: (
     <>
       <span className="hidden md:inline">
@@ -118,11 +113,7 @@ export const featuresHome: FeaturesProps = {
   hasBackground: false,
   columns: 3,
   header: {
-    title: (
-      <>
-        What you get with <span className="whitespace-nowrap">Gooseberry Technovision</span>
-      </>
-    ),
+    title: <>What you get with Gooseberry Technovision</>,
     subtitle:
       "Elevating Your Digital Presence: Discover the Synergies Unleashed in Our Platform's Core Strengths, from Seamless Integration to Open Collaboration.",
     // tagline: 'Features',
