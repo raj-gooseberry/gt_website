@@ -39,7 +39,7 @@ const Content = ({
         </div>
         <div aria-hidden="true" className="mt-10 md:mt-0 md:basis-1/2">
           {image && (
-            <div className="relative m-auto max-w-md hover:scale-105">
+            <div className="relative m-auto max-w-md transition-all duration-100 ease-in hover:scale-105">
               <Image
                 className="mx-auto w-full rounded-lg shadow-lg bg-dark-400 dark:bg-dark-700"
                 src={image.src}

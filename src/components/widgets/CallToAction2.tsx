@@ -2,7 +2,7 @@ import { IconChevronRight } from '@tabler/icons-react';
 import { CallToActionProps, Item } from '~/shared/types';
 
 const Card = ({ title, description, href, form }: Item) => (
-  <div className="card mb-6 px-5 py-4 hover:bg-primary-200 hover:scale-105 group">
+  <div className="card mb-6 px-5 py-4 hover:bg-primary-200 transition-all duration-100 ease-in hover:scale-105 group">
     <div className="flex items-center justify-between">
       <div className="w-full">
         <h3 className="mb-3 text-xl font-bold text-dark-700 dark:text-tertiary-100 group-hover:text-dark-900">
@@ -53,7 +53,7 @@ const CallToAction2 = ({ title, subtitle, items }: CallToActionProps) => (
           <h2 className="mb-3 flex justify-center text-6xl font-bold md:justify-start">{title}</h2>
           <p className="text-center text-xl text-primary-100 dark:text-dark-300 md:text-left">{subtitle}</p>
         </div>
-        <div className="relative -mb-6">
+        <div className="relative -mb-6 ">
           {items &&
             items.map(({ title, description, href, form }, index) => (
               <div key={`call-to-action-item-${index}`}>
