@@ -19,7 +19,7 @@ import {
 } from '~/shared/data/pages/ai.data';
 
 export const metadata: Metadata = {
-  title: 'Devops',
+  title: 'AI',
 };
 
 const Page = () => {

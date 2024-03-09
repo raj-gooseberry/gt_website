@@ -47,22 +47,26 @@ export const features2Services: FeaturesProps = {
   items: [
     {
       title: 'Web Application Development',
-      description: 'Crafting responsive and dynamic web applications for enhanced online presence.',
+      description:
+        'Gooseberry Technovision offers bespoke web application development solutions, optimizing for speed, functionality, and user experience to elevate your online presence and drive conversions.',
       icon: IconBrandTailwind,
     },
     {
       title: 'Mobile App Development',
-      description: 'Creating intuitive and feature-rich mobile applications for iOS and Android platforms.',
+      description:
+        'Elevate your brand with our mobile app development services, creating sleek, intuitive apps that captivate users and boost engagement, ensuring compatibility across platforms for maximum reach and impact.',
       icon: IconComponents,
     },
     {
       title: 'UI/UX Design',
-      description: 'Ensuring engaging and user-friendly interfaces for optimal user experiences.',
+      description:
+        'Our expert UI/UX designers craft visually stunning interfaces and seamless user experiences, leveraging cutting-edge design principles and techniques to enhance brand perception and drive customer satisfaction.',
       icon: IconListCheck,
     },
     {
       title: 'Integration Services',
-      description: 'Seamlessly integrating diverse systems and applications for enhanced functionality.',
+      description:
+        'Streamline your operations and maximize efficiency with our comprehensive integration services, seamlessly connecting disparate systems and processes to enable smooth data flow and enhanced productivity.',
       icon: IconRocket,
     },
     {
@@ -73,7 +77,8 @@ export const features2Services: FeaturesProps = {
     },
     {
       title: 'Maintenance and Support',
-      description: 'Providing ongoing support and maintenance to ensure software longevity and smooth operation.',
+      description:
+        ' Ensure uninterrupted performance and reliability with our proactive maintenance and support services, offering timely updates, security patches, and ongoing optimization to safeguard your digital assets and maximize uptime.',
       icon: IconBulb,
     },
   ],
