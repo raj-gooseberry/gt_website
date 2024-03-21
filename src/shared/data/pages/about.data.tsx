@@ -38,10 +38,10 @@ import {
 
 // Hero2 data on About page *******************
 export const hero2About: HeroProps = {
-  title: 'Great companies are made by great people',
+  title: "SUCCEED. DON'T JUST SURVIVE.",
   subtitle:
-    'Vivamus venenatis, lectus a pellentesque placerat, felis tellus ultrices eros, et aliquam sapien nibh sed sem. Fusce ut ante eget purus viverra malesuada. Morbi eget mi maximus, ultricies urna eget, tristique lorem. Fusce cursus venenatis quam, a blandit lectus vulputate id. Praesent id interdum orci, vitae condimentum dui.',
-  tagline: 'About Us Demo Page',
+    'Goosseberry Technologies is not only a globally recognized IT company but also a family filled with talented experts that help global brands, enterprises, mid-size businesses or even startups with innovative solutions.',
+  tagline: 'Know Us',
   // callToAction: {
   //   text: 'View jobs',
   //   href: 'https://www.linkedin.com/',
@@ -86,9 +86,9 @@ export const featuresFourAbout: FeaturesProps = {
   id: 'features-four-on-about',
   hasBackground: false,
   header: {
-    title: 'Our mission',
+    title: 'WHO WE ARE',
     subtitle:
-      'Quisque laoreet nisi et lectus consectetur, at placerat libero dictum. Donec sed hendrerit turpis. Nunc vel nibh blandit, hendrerit turpis non, mattis magna. Duis feugiat dui mi, eget iaculis ligula gravida congue. Nam quis mauris id eros imperdiet imperdiet. In et dolor non nisi vestibulum rhoncus nec eget dolor.',
+      'Gooseberry Technologies is full cycle custom software development company providing enterprise software development services, software consulting, dedicated software development teams and mobile app development solutions for businesses since 2020. At Gooseberry, we ensure that we deliver the highest standards of excellence. In order to provide that, we make sure to approach the process with a smart strategy that’s put together after understanding all the key nuances involved.',
     tagline: 'Mission and Values',
   },
 };
@@ -190,42 +190,45 @@ export const features3About: FeaturesProps = {
   hasBackground: true,
   columns: 3,
   header: {
-    title: 'Our culture',
+    title: 'OUR SUCCESS IN NUMBERS',
     subtitle:
-      'Nullam maximus ante eros, ac eleifend mi condimentum ut. Donec volutpat felis ac purus pretium, vitae mollis quam scelerisque.',
-    tagline: 'culture',
+      'Gooseberry Technovision has been at the forefront of web and mobile app development for over a decade and a half of existence. We have helped businesses across industries to transform their digital presence with innovative solutions that enhance customer engagement and drive growth. As such our legacy speaks for itself, but here are some numbers as well.',
+    tagline: '',
   },
   items: [
     {
-      title: 'Customer engagement',
-      description: 'Nullam non sodales massa. Ut justo neque, elementum et vehicula vel, pellentesque non orci.',
+      title: '5+ Years of Growth',
+      description:
+        'From a rented cubicle to a company-owned campus, from zilch to a recognizable & awarded company, but we are just getting started',
       icon: IconCirclesRelation,
     },
     {
-      title: 'Creativity and design excellence',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: '30+ Product Experts',
+      description:
+        'A world-class agile, product team pressing digital acceleration while designing, developing, and shipping your vision',
       icon: IconPalette,
     },
     {
-      title: 'Continuous learning',
-      description: 'Morbi sit amet arcu vitae metus molestie auctor sit amet in risus. Sed vel lacinia purus.',
+      title: '100+ Projects Delivered',
+      description: 'Web or PWA, iOS or Android, Native or Cross Platform. For Startups, Scale-ups, or Enterprise',
       icon: IconBook,
     },
     {
-      title: 'Collaboration and cross-functionality',
-      description: 'Phasellus id cursus urna. Nullam feugiat tellus sed euismod venenatis.',
+      title: '10+ Countries Served',
+      description:
+        'From India to the world. Our offices full of good vibes and talented techies making a global impact and empowering businesses worldwide',
       icon: IconPuzzle2,
     },
-    {
-      title: 'Entrepreneurial spirit',
-      description: 'Phasellus interdum placerat enim sed vehicula. Ut tincidunt, magna in iaculis maximus.',
-      icon: IconFlame,
-    },
-    {
-      title: 'Employee well-being and balance',
-      description: 'Maecenas urna augue, commodo vitae lectus euismod, tempor aliquam arcu.',
-      icon: IconScale,
-    },
+    // {
+    //   title: 'Entrepreneurial spirit',
+    //   description: 'Phasellus interdum placerat enim sed vehicula. Ut tincidunt, magna in iaculis maximus.',
+    //   icon: IconFlame,
+    // },
+    // {
+    //   title: 'Employee well-being and balance',
+    //   description: 'Maecenas urna augue, commodo vitae lectus euismod, tempor aliquam arcu.',
+    //   icon: IconScale,
+    // },
   ],
 };
 
