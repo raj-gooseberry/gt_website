@@ -9,12 +9,15 @@ const SocialProof = ({ title, images, id, hasBackground = false }: SocialProofPr
         {title}
       </h1>
     )}
-    <div className="flex items-center justify-center gap-6 md:gap-9">
+    <div className="grid md:grid-cols-4 sm:grid-cols-2 items-center justify-center gap-6 md:gap-9">
       {images &&
         images.map(({ src, alt, link }, index) => (
           <div key={`item-social-proof-${index}`}>
             <a href={link} target="_blank" rel="noopener">
-              <Image src={src} alt={alt} className="h-auto w-40 rounded-full m-10" object-fit="contain" />
+              <div className=" h-48 w-48 flex justify-center rounded-full bg-white">
+                {' '}
+                <Image src={src} alt={alt} className="h-auto w-40 rounded-full m-10" object-fit="contain" />
+              </div>
             </a>
           </div>
         ))}

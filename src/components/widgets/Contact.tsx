@@ -4,12 +4,12 @@ import { ContactProps } from '~/shared/types';
 import WidgetWrapper from '../common/WidgetWrapper';
 
 const Contact = ({ header, content, items, form, id, hasBackground = false }: ContactProps) => (
-  <WidgetWrapper id={id ? id : ''} hasBackground={hasBackground} containerClass="max-w-6xl">
+  <WidgetWrapper id={id ? id : ''} hasBackground={hasBackground} containerClass="max-w-5xl">
     {header && <Headline header={header} titleClass="text-3xl sm:text-5xl" />}
     <div className="flex items-stretch justify-center">
       <div className={`grid ${!content && !items ? 'md:grid-cols-1' : 'md:grid-cols-1'}`}>
         <div className="mx-auto max-w-10xl px-4 sm:px-6">
-          {content && <p className="mt-3 mb-12 text-lg text-primary-100 dark:text-dark-200">{content}</p>}
+          {content && <p className="mt-2 mb-8 text-lg text-primary-100 dark:text-dark-200">{content}</p>}
           <ul className="mb-6 md:mb-0 md:flex lg:justify-between ">
             {items &&
               items.map(({ title, description, icon: Icon }, index) => (

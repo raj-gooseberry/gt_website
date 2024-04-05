@@ -188,7 +188,7 @@ export const contentHomeOne: ContentProps = {
   hasBackground: false,
   header: {
     title: 'Revolutionize Your Business with Gooseberry technovision - Your Premier IT Services Partner!',
-    subtitle: '🌐 Discover Our Comprehensive IT Services',
+    subtitle: 'Discover Our Comprehensive IT Services',
     // tagline: 'Content',
   },
   // content:
@@ -513,7 +513,7 @@ export const pricingHome: PricingProps = {
         },
       ],
       callToAction: {
-        targetBlank: true,
+        // targetBlank: true,
         text: 'Free 7-day trial',
         href: '/',
       },
@@ -538,7 +538,7 @@ export const pricingHome: PricingProps = {
         },
       ],
       callToAction: {
-        targetBlank: true,
+        // targetBlank: true,
         text: 'Free 15-day trial',
         href: '/',
       },
@@ -564,7 +564,7 @@ export const pricingHome: PricingProps = {
         },
       ],
       callToAction: {
-        targetBlank: true,
+        // targetBlank: true,
         text: 'Free 30-day trial',
         href: '/',
       },

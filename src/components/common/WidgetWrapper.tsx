@@ -6,10 +6,7 @@ const WidgetWrapper = ({ children, id, hasBackground, containerClass }: WrapperT
   <section className="relative not-prose scroll-mt-[72px]" id={id}>
     <Background hasBackground={hasBackground} />
     <div
-      className={twMerge(
-        'relative mx-auto max-w-7xl px-4 md:px-6 py-12 md:py-16 lg:py-20 text-default',
-        containerClass,
-      )}
+      className={twMerge('relative mx-auto max-w-7xl px-4 md:px-6 py-8 md:py-8 lg:py-8 text-default', containerClass)}
     >
       {children}
     </div>
