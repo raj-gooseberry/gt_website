@@ -1,4 +1,5 @@
 import { footerData2 } from '~/shared/data/global.data';
+import Social_Icons from '../common/Social_Icons';
 
 const Footer2 = () => {
   const { links, columns, socials, footNote } = footerData2;
@@ -57,6 +58,7 @@ const Footer2 = () => {
           {footNote}
         </div>
       </div>
+      <Social_Icons />
     </footer>
   );
 };
