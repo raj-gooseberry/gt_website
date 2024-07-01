@@ -5,6 +5,7 @@ import { SITE } from '~/config.js';
 import Providers from '~/components/atoms/Providers';
 import Header from '~/components/widgets/Header';
 import Footer from '~/components/widgets/Footer2';
+import Navbar from '~/components/widgets/Navbar';
 
 import { Poppins as CustomFont } from 'next/font/google';
 import '~/assets/styles/base.css';
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: LayoutProps) {
       <body className="tracking-tight antialiased text-dark-900 dark:text-dark-300">
         <Providers>
           <Header />
+          <Navbar />
           <main>{children}</main>
           <Footer />
         </Providers>
