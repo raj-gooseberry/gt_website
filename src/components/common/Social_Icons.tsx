@@ -1,8 +1,7 @@
-import '../../assets/styles/social_icons.css'
+import '../../assets/styles/social_icons.css';
 import Logo from '../atoms/Logo';
 
 const Social_Icons = () => {
-
   return (
     <>
       <input type="radio" name="toggle" id="toggleOpen" value="toggleOpen" />
