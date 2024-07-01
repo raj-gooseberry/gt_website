@@ -1,0 +1,122 @@
+.line {
+    width: 98vw;
+}
+
+.left,
+.right {
+    width: 49vw;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.left {
+    color: var(--secondary);
+    transform: skew(0deg, -15deg);
+}
+
+.right {
+    color: black;
+    transform: skew(0deg, 15deg);
+}
+
+.left .content {
+    width: 98vw;
+    text-align: center;
+}
+
+.right .content {
+    width: 98vw;
+    text-align: center;
+    transform: translate(-49vw);
+}
+
+.slogan {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 5vw;
+    text-transform: uppercase;
+    line-height: .8;
+    transition: ease-out .6s;
+}
+
+.company_logo {
+    font-size: 48px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.company_logo {
+    animation: showup 7s infinite;
+}
+
+.company_name {
+    width: 0px;
+    animation: reveal 7s infinite;
+}
+
+.company_name span {
+    margin-left: -355px;
+    animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+
+    20% {
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+
+    30% {
+        width: 355px;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        width: 355px;
+    }
+}

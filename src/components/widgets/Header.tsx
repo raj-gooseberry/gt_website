@@ -1,57 +1,117 @@
-import React from 'react';
-import '../../assets/styles/navbar.css'
+'use client'
+
+import React, { useEffect } from 'react';
+import '../../assets/styles/header.css'
+import '../../assets/images/GT logo.png'
+import Image from 'next/image';
+import logo from '../../assets/images/GT logo.png'
 
 const Header = () => {
+  useEffect(() => {
+    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('resize', handleWindowResize);
+
+    const spansSlow = document.querySelectorAll('.spanSlow');
+    const spansFast = document.querySelectorAll('.spanFast');
+
+    let width = window.innerWidth;
+
+    function handleMouseMove(e) {
+      let normalizedPosition = e.pageX / (width / 2) - 1;
+      let speedSlow = 100 * normalizedPosition;
+      let speedFast = 200 * normalizedPosition;
+      spansSlow.forEach((span: any) => {
+        span.style.transform = `translate(${speedSlow}px)`;
+      });
+      spansFast.forEach((span: any) => {
+        span.style.transform = `translate(${speedFast}px)`
+      })
+    }
+    //we need to recalculate width when the window is resized
+    function handleWindowResize() {
+      width = window.innerWidth;
+    }
+  })
   return (
-    <span>
-      <header className="header">
-        <h1>Header</h1>
-      </header>
+    <>
+      <div className='flex justify-center items-center py-[10vh]'>
+        <Image
+          width={150}
+          height={150}
+          alt="Test"
+          src={logo}
+        />
+      </div>
+      {/* <div className='company_logo'>
+        <Image
+          width={200}
+          height={200}
+          alt="Test"
+          src={logo}
+        />
+      </div>
+      <div className='company_name'>
+        <span>
 
-      <nav className="sticky navbar">
-        <div className="brand display__logo">
-          <a href="#top" className="nav__link"> <span className="logo">Mohammad Abu Mattar</span></a>
+        <Image
+          width={200}
+          height={50}
+          alt="Test"
+          src={name}
+          />
+          </span>
+      </div> */}
+      <div className="my-[10vh]">
+        <div className="line">
+          <div className="left">
+            <div className="content">
+              <span className="slogan spanSlow">Aladdin</span>
+            </div>
+          </div>
+      <div className="right">
+            <div className="content">
+              <span className="slogan spanSlow">Aladdin</span>
+            </div>
+          </div>
         </div>
-
-        <input type="checkbox" id="nav" className="hidden" />
-        <label htmlFor="nav" className="nav__open"><i></i><i></i><i></i></label>
-        <div className="nav">
-          <ul className="nav__items">
-            <li className="nav__item"><a href="#home" className="nav__link">Home</a></li>
-            <li className="nav__item"><a href="#about" className="nav__link">About</a></li>
-            <li className="nav__item"><a href="#portfolio" className="nav__link">Portfolio</a></li>
-            <li className="nav__item"><a href="#contact" className="nav__link">Contact</a></li>
-          </ul>
+        <div className="line">
+          <div className="left">
+            <div className="content">
+              <span className="slogan spanSlow">What do</span>
+            </div>
+          </div>
+      <div className="right">
+            <div className="content">
+              <span className="slogan spanSlow">what do</span>
+            </div>
+          </div>
         </div>
-      </nav>
-
-      <main>
-        <section className="home">
-          <div id="home">
-            <h1>Home</h1>
+        <div className="line">
+          <div className="left">
+            <div className="content">
+              <span className="slogan spanFast">you</span>
+            </div>
           </div>
-        </section>
-        <section className="about">
-          <div id="about">
-            <h1>About</h1>
+          <div className="right">
+            <div className="content">
+              <span className="slogan spanFast">you</span>
+            </div>
           </div>
-        </section>
-        <section className="portfolio">
-          <div id="portfolio">
-            <h1>Portfolio</h1>
+        </div>
+        <div className="line">
+          <div className="left">
+            <div className="content">
+              <span className="slogan spanSlow">want</span>
+            </div>
           </div>
-        </section>
-        <section className="contact">
-          <div id="contact">
-            <h1>Contact</h1>
+            <div className="right">
+            <div className="content">
+              <span className="slogan spanSlow">want</span>
+            </div>
           </div>
-        </section>
-      </main>
-
-      <footer className="footer">
-        <h1>Footer</h1>
-      </footer>
-    </span>
+        </div>
+      </div>
+    </>
   );
 };
 
