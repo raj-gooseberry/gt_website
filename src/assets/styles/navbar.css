@@ -45,7 +45,7 @@
 .portfolio h1::before,
 .contact h1::before,
 .footer h1::before {
-	content: '#';
+	content: '';
 }
 
 .header h1,

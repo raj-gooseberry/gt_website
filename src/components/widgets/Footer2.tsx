@@ -1,65 +1,57 @@
-import { footerData2 } from '~/shared/data/global.data';
+import React from 'react';
 import Social_Icons from '../common/Social_Icons';
+import CircularMenu from './CircularMenu';
 
 const Footer2 = () => {
-  const { links, columns, socials, footNote } = footerData2;
-
   return (
-    <footer className='bg-primary-200 border-t border-dark-200 dark:border-dark-800 dark:bg-dark-900 md:backdrop-blur-sm dark:md:bg-dark-900/90'>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="xs:gap-8 grid grid-cols-4 gap-4 gap-y-8 py-8 md:py-12">
-          {columns.map(({ title, texts }, index) => (
-            <div
-              key={`item-column-${index}`}
-              className="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-1 xl:col-span-1"
+    <div className="w-full min-h-screen flex items-center justify-center bg-black">
+      <div className="md:w-2/3 w-full px-4 text-white flex flex-col">
+        <div className="w-full text-5xl font-bold">
+          <h2 className="md:w-full sm:w-2/3">How can we help you. get in touch</h2>
+        </div>
+        <div className="flex mt-8 flex-col md:flex-row md:justify-between">
+          <p className="w-full md:w-2/3 text-gray-400">
+            To ensure that all Wikipedia content is verifiable, anyone may question an uncited claim. If your work has
+            been tagged
+          </p>
+          <div className="w-44 pt-6 md:pt-0">
+            <a
+              href="#"
+              className="bg-red-500 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center"
             >
-              <div className="mb-2 font-medium text-dark-800 dark:text-dark-300">{title}</div>
-              {texts &&
-                texts.map((text, index2) => (
-                  <p key={`item-text-${index2}`} className="text-dark-600 dark:text-dark-400">
-                    {text}
-                  </p>
-                ))}
-            </div>
-          ))}
-          <div className="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-1 xl:col-span-1">
-            <div className="mb-2 font-medium text-dark-800 dark:text-dark-300">Social</div>
-            <ul className="mb-4 -ml-2 flex md:order-1 md:mb-0">
-              {socials.map(({ label, icon: Icon, href }, index) => (
-                <li key={`item-social-${index}`}>
-                  <a
-                    className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm hover:bg-dark-100 focus:outline-none focus:ring-4 focus:ring-dark-200 dark:text-dark-400 dark:hover:bg-dark-700 dark:focus:ring-dark-700"
-                    aria-label={label}
-                    href={href}
-                  >
-                    {Icon && <Icon className="h-5 w-5" />}
-                  </a>
-                </li>
-              ))}
-            </ul>
+              Contact US
+            </a>
           </div>
         </div>
-        <div className="text-muted py-6 text-sm text-dark-700 dark:text-dark-400 md:flex md:items-center md:justify-between md:py-8">
-          <ul className="mb-4 -ml-2 flex pl-2 md:order-1 md:mb-0">
-            {links &&
-              links.map(({ label, href }, index) => (
-                <li key={`item-link-${index}`}>
-                  <a
-                    className="duration-150 ease-in-out placeholder:transition hover:text-dark-700 hover:underline dark:text-dark-400"
-                    aria-label={label}
-                    href={href}
-                  >
-                    {label}
-                  </a>
-                  {links.length - 1 !== index && <span className="mr-1"> · </span>}
-                </li>
-              ))}
-          </ul>
-          {footNote}
+        <div className="flex flex-col">
+          <div className="flex mt-24 mb-12 flex-row justify-between">
+            <div></div>
+            <a href="#" className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
+              About
+            </a>
+            <a href="#" className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
+              Services
+            </a>
+            <a href="#" className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
+              Why us
+            </a>
+            <a href="#" className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
+              Contact
+            </a>
+            {/* <div className="flex flex-row space-x-8 items-center justify-between">
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="https://www.youtube.com/channel/UCjtCbnkIaiCJgj13sEZ9iqw"></a>
+            </div> */}
+          </div>
+
+          <hr className="border-gray-600 mb-16" />
+          <Social_Icons />
+          <CircularMenu />
+          <p className="w-full text-center my-12 text-gray-600">Copyright © 2020 Besnik Creative</p>
         </div>
       </div>
-      <Social_Icons />
-    </footer>
+    </div>
   );
 };
 
