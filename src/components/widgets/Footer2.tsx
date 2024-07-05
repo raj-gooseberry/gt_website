@@ -1,6 +1,8 @@
 import React from 'react';
 import Social_Icons from '../common/Social_Icons';
 import CircularMenu from './CircularMenu';
+import SvgAnimation from './SvgAnimation';
+import DynamicContent from './DynamicContent';
 
 const Footer2 = () => {
   return (
@@ -47,7 +49,10 @@ const Footer2 = () => {
 
           <hr className="border-gray-600 mb-16" />
           <Social_Icons />
-          <CircularMenu />
+          {/* <CircularMenu /> */}
+          {/* <SvgAnimation /> */}
+          {/* <DynamicContent /> */}
+
           <p className="w-full text-center my-12 text-gray-600">Copyright © 2020 Besnik Creative</p>
         </div>
       </div>

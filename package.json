@@ -13,14 +13,20 @@
     "prettier:check": "prettier --check --ignore-unknown ."
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
+    "@swiper/core": "^0.0.21",
     "@tabler/icons-react": "^2.44.0",
     "gray-matter": "^4.0.3",
+    "gsap": "^3.12.5",
+    "jquery": "^3.7.1",
     "markdown-it": "^14.0.0",
     "next": "^14.0.4",
     "next-themes": "^0.2.1",
     "node": "^21.6.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scroll": "^1.9.0",
+    "scrollmagic": "^2.0.8",
     "sharp": "^0.33.1",
     "tailwind-merge": "^2.2.0"
   },
@@ -30,6 +36,7 @@
     "@types/node": "20.10.5",
     "@types/react": "18.2.45",
     "@types/react-dom": "18.2.18",
+    "@types/swiper": "^6.0.0",
     "autoprefixer": "^10.4.16",
     "eslint": "8.56.0",
     "eslint-config-next": "^14.0.4",
@@ -39,6 +46,7 @@
     "prettier": "3.1.1",
     "prettier-plugin-tailwindcss": "0.5.9",
     "storybook": "^7.6.4",
+    "swiper": "^11.1.4",
     "tailwindcss": "^3.4.0",
     "typescript": "^5.3.3"
   },
