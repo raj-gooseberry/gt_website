@@ -15,6 +15,7 @@ import SvgAnimation from '~/components/widgets/SvgAnimation';
 import CircularMenu from '~/components/widgets/CircularMenu';
 import ImageAccordions from '~/components/widgets/ImageAccordions';
 import OnscrollAnimation from '~/components/widgets/OnscrollAnimation';
+import UpScroll from '~/components/widgets/UpScroll';
 
 const customFont = CustomFont({ weight: '500', subsets: ['latin'], variable: '--font-custom' });
 
@@ -50,7 +51,7 @@ export default function RootLayout({ children }: LayoutProps) {
             <div className="brand  display__logo">
               <a href="#top" className="nav__link">
                 {' '}
-                <span className="logo">Mohammad Abu Mattar</span>
+                <span className="logo">Gooseberry Technovision</span>
               </a>
             </div>
 
@@ -100,6 +101,7 @@ export default function RootLayout({ children }: LayoutProps) {
           {/* <OnscrollAnimation /> */}
           <footer className="footer">
             <Footer />
+            <UpScroll />
           </footer>
         </Providers>
       </body>
