@@ -23,3 +23,30 @@
     @apply absolute top-[19px] right-[-21px] block w-full rotate-45 bg-green-700 text-center text-[10px] font-bold uppercase leading-5 text-tertiary-100 shadow-[0_3px_10px_-5px_rgba(0,0,0,0.3)] before:absolute before:left-0 before:top-full before:z-[-1] before:border-[3px] before:border-r-transparent before:border-b-transparent before:border-l-green-800 before:border-t-green-800 before:content-[''] after:absolute after:right-0 after:top-full after:z-[-1] after:border-[3px] after:border-l-transparent after:border-b-transparent after:border-r-green-800 after:border-t-green-800 after:content-[''];
   }
 }
+
+:root {
+	--primary: #faaf0e;
+	--secondary: #15af00;
+	--shades: rgba(238, 238, 238, 1.0);
+  --white: #ffffff;
+  --dark: #212121;
+  --grey: #515151;
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--grey);
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--grey);
+}

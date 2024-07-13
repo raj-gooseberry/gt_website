@@ -2,9 +2,9 @@
 
 import React, { useEffect } from 'react';
 import '../../assets/styles/header.css'
-import '../../assets/images/GT logo.png'
 import Image from 'next/image';
-import logo from '../../assets/images/GT logo.png'
+import logo from '../../assets/images/GT logo.png';
+import DownScroll from './DownScroll';
 
 const Header = () => {
   useEffect(() => {
@@ -68,7 +68,7 @@ const Header = () => {
               <span className="slogan spanSlow">Aladdin</span>
             </div>
           </div>
-      <div className="right">
+          <div className="right">
             <div className="content">
               <span className="slogan spanSlow">Aladdin</span>
             </div>
@@ -80,7 +80,7 @@ const Header = () => {
               <span className="slogan spanSlow">What do</span>
             </div>
           </div>
-      <div className="right">
+          <div className="right">
             <div className="content">
               <span className="slogan spanSlow">what do</span>
             </div>
@@ -104,13 +104,14 @@ const Header = () => {
               <span className="slogan spanSlow">want</span>
             </div>
           </div>
-            <div className="right">
+          <div className="right">
             <div className="content">
               <span className="slogan spanSlow">want</span>
             </div>
           </div>
         </div>
       </div>
+      <DownScroll />
     </>
   );
 };

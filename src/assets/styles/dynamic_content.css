@@ -1,51 +1,19 @@
-@layer library, reset, base, demo;
-@import 'https://unpkg.com/open-props@2.0.0-beta.5' layer(library);
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap');
+@import 'https://unpkg.com/open-props@2.0.0-beta.5';
 
-@layer reset {
-  *,
-  ::before,
-  ::after {
-    box-sizing: border-box;
+
+.dynamic-section {
+  --section-block-size: max(400px, 100dvb);
+  display: grid;
+  background-color: white;
+  min-block-size: var(--section-block-size);
+  position: relative;
+  block-size: 100%;
+  display: grid;
+
+  >* {
+    grid-area: 1/1;
   }
 
-  :where(:not(dialog)) {
-    margin: 0;
-  }
-}
-
-/* @layer base {
-  html {
-    --nav-block-size: 74px;
-    --brand-gradient: linear-gradient(227deg,
-        #1400c7 0%,
-        #00bbff 100%);
-
-    @media (prefers-reduced-motion: no-preference) {
-      scroll-behavior: smooth;
-    }
-  }
-
-  body {
-    font-family: 'Inter', sans-serif;
-    min-block-size: 100dvb;
-  }
-} */
-
-@layer demo {
-  .section {
-    --section-block-size: max(400px, 100dvb);
-    display: grid;
-    background-color: white;
-    min-block-size: var(--section-block-size);
-    position: relative;
-    block-size: 100%;
-    display: grid;
-
-    >* {
-      grid-area: 1/1;
-    }
-  }
 
   .section-wrapper {
     position: relative;
@@ -236,7 +204,7 @@
     timeline-scope: --content-1, --content-2, --content-3, --content-4;
   }
 
-  .section {
+  .dynamic-section {
     view-timeline-name: --section;
   }
 

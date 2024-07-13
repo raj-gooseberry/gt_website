@@ -4,7 +4,7 @@ import '../../assets/styles/dynamic_content.css';
 
 const DynamicContent = () => {
   return (
-    <div className="section">
+    <div className="dynamic-section">
       <div className="video-visual">
         <video className="video" autoPlay loop muted poster="" role="none" aria-label="background gradient animation">
           <source

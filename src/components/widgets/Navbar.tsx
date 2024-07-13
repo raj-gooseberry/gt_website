@@ -1,35 +1,52 @@
 import React from 'react';
+import '../../assets/styles/navbar.css';
 
 const Navbar = () => {
   return (
-    <nav className="sticky top-0 z-10 bg-gray-800 shadow-md flex justify-between">
-      <div className="brand text-3xl py-2">
-        <a href="#top" className="text-white">
+    <nav className="sticky navbar"> 
+      <div className="brand  display__logo">
+        <a href="#top" className="nav__link">
           <span className="logo">Gooseberry Technovision</span>
         </a>
       </div>
 
       <input type="checkbox" id="nav" className="hidden" />
-      <label htmlFor="nav" className="nav__open cursor-pointer md:hidden">
-        <i></i><i></i><i></i>
+      <label htmlFor="nav" className="nav__open">
+        <i></i>
+        <i></i>
+        <i></i>
       </label>
-
-      <div className="nav hidden md:block">
-        <ul className="nav__items flex">
-          <li className="nav__item pt-4">
-            <a href="#home" className="nav__link text-white hover:text-red-500 px-4 py-2">Home</a>
+      <div className="nav">
+        <ul className="nav__items">
+          <li className="nav__item">
+            <a href="#home" className="nav__link">
+              Home
+            </a>
           </li>
-          <li className="nav__item pt-4">
-            <a href="#about" className="nav__link text-white hover:text-red-500 px-4 py-2">About</a>
+          <li className="nav__item">
+            <a href="#about" className="nav__link">
+              About
+            </a>
           </li>
-          <li className="nav__item pt-4">
-            <a href="#portfolio" className="nav__link text-white hover:text-red-500 px-4 py-2">Portfolio</a>
+          <li className="nav__item">
+            <a href="#portfolio" className="nav__link">
+              Portfolio
+            </a>
           </li>
-          <li className="nav__item pt-4">
-            <a href="#contact" className="nav__link text-white hover:text-red-500 px-4 py-2">Contact</a>
+          <li className="nav__item">
+            <a href="#contact" className="nav__link">
+              Contact
+            </a>
           </li>
         </ul>
       </div>
+      <nav className="navMenu">
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">Work</a>
+        <a href="#">About</a>
+        <div className="dot"></div>
+      </nav>
     </nav>
   );
 };

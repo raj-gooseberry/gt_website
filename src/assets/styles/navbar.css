@@ -1,12 +1,4 @@
-:root {
-	--primary: #faaf0e;
-	--secondary: #15af00;
-	--shades: rgba(238, 238, 238, 1.0);
-}
 
-* {
-	scroll-behavior: smooth;
-}
 
 
 .header,

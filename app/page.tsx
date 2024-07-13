@@ -1,16 +1,10 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import CardComponents from '~/components/widgets/CardComponents';
-import DownScroll from '~/components/widgets/DownScroll';
-import GlitchSection from '~/components/widgets/GlitchSection';
 import NavSection from '~/components/widgets/NavSection';
-import ScrollClip from '~/components/widgets/ScrollClip';
-import UpScroll from '~/components/widgets/UpScroll';
 
 export default function Page() {
   return (
     <>
-      <DownScroll />
 
       {/* <section className="home">
         <div id="home">
