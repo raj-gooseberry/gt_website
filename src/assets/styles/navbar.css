@@ -45,11 +45,6 @@
 	color: var(--shades);
 }
 
-.footer {
-	height: 50vh;
-	background-color: var(--primary);
-}
-
 .header {
 	background-color: var(--primary);
 }
