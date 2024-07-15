@@ -5,7 +5,6 @@ import NavSection from '~/components/widgets/NavSection';
 export default function Page() {
   return (
     <>
-
       {/* <section className="home">
         <div id="home">
           <h1>Home</h1>

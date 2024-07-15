@@ -7,10 +7,14 @@ const UpScroll = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 200) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
+      const footer = document.querySelector('footer');
+      if (footer) {
+        const footerRect = footer.getBoundingClientRect();
+        if (footerRect.top <= window.innerHeight) {
+          setShowButton(true);
+        } else {
+          setShowButton(false);
+        }
       }
     };
 
@@ -28,10 +32,10 @@ const UpScroll = () => {
   };
 
   return (
-    <div className='up-scroll'>
-      <button className={`back-to-top ${showButton ? 'show' : ''}`} onClick={scrollToTop} type="button"></button>;
+    <div className="up-scroll">
+      <button className={`back-to-top ${showButton ? 'show' : ''}`} onClick={scrollToTop} type="button"></button>
     </div>
-  )
+  );
 };
 
 export default UpScroll;

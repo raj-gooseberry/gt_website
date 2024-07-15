@@ -1,10 +1,11 @@
-'use client'
+'use client';
 
 import React, { useEffect } from 'react';
-import '../../assets/styles/header.css'
+import '../../assets/styles/header.css';
 import Image from 'next/image';
 import logo from '../../assets/images/GT logo.png';
 import DownScroll from './DownScroll';
+import CustomCursor from './CustomCursor';
 
 const Header = () => {
   useEffect(() => {
@@ -24,23 +25,19 @@ const Header = () => {
         span.style.transform = `translate(${speedSlow}px)`;
       });
       spansFast.forEach((span: any) => {
-        span.style.transform = `translate(${speedFast}px)`
-      })
+        span.style.transform = `translate(${speedFast}px)`;
+      });
     }
     //we need to recalculate width when the window is resized
     function handleWindowResize() {
       width = window.innerWidth;
     }
-  })
+  });
   return (
     <>
-      <div className='flex justify-center items-center py-[10vh]'>
-        <Image
-          width={150}
-          height={150}
-          alt="Test"
-          src={logo}
-        />
+      <CustomCursor />
+      <div className="flex justify-center items-center py-[10vh] bg">
+        <Image width={150} height={150} alt="Test" src={logo} />
       </div>
       {/* <div className='company_logo'>
         <Image
