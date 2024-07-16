@@ -4,7 +4,7 @@ import '../../assets/styles/glitch_section.css';
 
 const GlitchSection = () => {
   return (
-    <div className="container">
+    <div className="container glitchSection">
       <div className="row one">
         <div className="column one">
           <div className="text set1">

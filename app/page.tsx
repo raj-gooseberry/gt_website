@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
+import HeroSection from '~/components/widgets/HeroSection';
 import NavSection from '~/components/widgets/NavSection';
 
 export default function Page() {
@@ -29,7 +30,7 @@ export default function Page() {
       {/* <GlitchSection /> */}
       <NavSection />
       <section className="sec" id="home">
-        home
+        <HeroSection />
       </section>
       <section className="sec" id="about">
         about

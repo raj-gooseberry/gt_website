@@ -147,7 +147,7 @@ const SvgAnimation = () => {
 
   return (
     <svg
-      className="mainSVG"
+      className="mainSVG SVG"
       viewBox="0 0 800 600"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid meet"

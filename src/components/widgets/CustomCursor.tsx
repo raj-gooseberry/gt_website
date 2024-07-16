@@ -48,7 +48,7 @@ const CustomCursor = () => {
   };
 
   return (
-    <div id="elem1" className="elem">
+    <div id="elem1" className="elem elements">
       <img className="first" src={Layer_1} alt="" />
     </div>
   );

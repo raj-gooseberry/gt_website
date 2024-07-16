@@ -1,149 +1,197 @@
+.bg:after {
+  animation: grain 8s steps(10) infinite;
+  background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+  content: '';
+  height: 300%;
+  width: 300%;
+  left: -100%;
+  top: -110%;
+  opacity: 0.8;
+  position: fixed;
+}
+header {
+  z-index: 2;
+}
+@keyframes grain {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(5%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(5%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
 
 .line {
-    width: 98vw;
+  width: 98vw;
 }
 
 .left,
 .right {
-    width: 49vw;
-    overflow: hidden;
-    display: inline-block;
+  width: 49vw;
+  overflow: hidden;
+  display: inline-block;
 }
 
 .left {
-    color: var(--secondary);
-    transform: skew(0deg, -15deg);
+  color: var(--secondary);
+  transform: skew(0deg, -15deg);
 }
 
 .right {
-    color: black;
-    transform: skew(0deg, 15deg);
+  color: black;
+  transform: skew(0deg, 15deg);
 }
 
 .left .content {
-    width: 98vw;
-    text-align: center;
+  width: 98vw;
+  text-align: center;
 }
 
 .right .content {
-    width: 98vw;
-    text-align: center;
-    transform: translate(-49vw);
+  width: 98vw;
+  text-align: center;
+  transform: translate(-49vw);
 }
 
 .slogan {
-    display: inline-block;
-    font-weight: 700;
-    font-size: 5vw;
-    text-transform: uppercase;
-    line-height: .8;
-    transition: ease-out .6s;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 5vw;
+  text-transform: uppercase;
+  line-height: 0.8;
+  transition: ease-out 0.6s;
 }
 
 .company_logo {
-    font-size: 48px;
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
+  font-size: 48px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .company_logo {
-    animation: showup 7s infinite;
+  animation: showup 7s infinite;
 }
 
 .company_name {
-    width: 0px;
-    animation: reveal 7s infinite;
+  width: 0px;
+  animation: reveal 7s infinite;
 }
 
 .company_name span {
-    margin-left: -355px;
-    animation: slidein 7s infinite;
+  margin-left: -355px;
+  animation: slidein 7s infinite;
 }
 
 @keyframes showup {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    20% {
-        opacity: 1;
-    }
+  20% {
+    opacity: 1;
+  }
 
-    80% {
-        opacity: 1;
-    }
+  80% {
+    opacity: 1;
+  }
 
-    100% {
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes slidein {
-    0% {
-        margin-left: -800px;
-    }
+  0% {
+    margin-left: -800px;
+  }
 
-    20% {
-        margin-left: -800px;
-    }
+  20% {
+    margin-left: -800px;
+  }
 
-    35% {
-        margin-left: 0px;
-    }
+  35% {
+    margin-left: 0px;
+  }
 
-    100% {
-        margin-left: 0px;
-    }
+  100% {
+    margin-left: 0px;
+  }
 }
 
 @keyframes reveal {
-    0% {
-        opacity: 0;
-        width: 0px;
-    }
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
 
-    20% {
-        opacity: 1;
-        width: 0px;
-    }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
 
-    30% {
-        width: 355px;
-    }
+  30% {
+    width: 355px;
+  }
 
-    80% {
-        opacity: 1;
-    }
+  80% {
+    opacity: 1;
+  }
 
-    100% {
-        opacity: 0;
-        width: 355px;
-    }
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
+}
+* {
+  /* cursor: none; */
+  position: relative;
 }
 
+.elem {
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* border-bottom: 2px solid #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; */
+}
 
-  .bg:after {
-    animation: grain 8s steps(10) infinite;
-    background-image: url('https://grainy-gradients.vercel.app/noise.svg');
-    content: "";
-    height: 300%;
-    width: 300%;
-    left: -100%;
-    top: -110%;
-    opacity: 0.8;
-    position: fixed;
-  }
-  
-  @keyframes grain {
-    0%, 100% { transform:translate(0, 0) }
-    10% { transform:translate(-5%, -10%) }
-    20% { transform:translate(-15%, 5%) }
-    30% { transform:translate(5%, -25%) }
-    40% { transform:translate(-5%, 25%) }
-    50% { transform:translate(-15%, 10%) }
-    60% { transform:translate(15%, 0%) }
-    70% { transform:translate(0%, 15%) }
-    80% { transform:translate(5%, 35%) }
-    90% { transform:translate(-10%, 10%) }
-  }
+.first {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all linear 0.3s;
+}

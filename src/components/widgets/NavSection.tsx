@@ -28,7 +28,7 @@ const NavSection = () => {
   }, []);
 
   return (
-    <nav className="navbarr">
+    <nav className="navbarr navbarrr">
       <ul>
         <li>
           <a href="#home" className="dot active" data-scroll="home">

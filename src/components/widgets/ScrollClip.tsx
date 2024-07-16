@@ -26,7 +26,7 @@ const ScrollClip = () => {
   }, []);
 
   return (
-    <section className="scroll-clip">
+    <section className="scroll-clip ScrollClip">
       <div className="box box1">
         <h2>Scroll</h2>
       </div>

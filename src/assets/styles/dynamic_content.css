@@ -1,6 +1,6 @@
 @import 'https://unpkg.com/open-props@2.0.0-beta.5';
 
-
+.dynamicSection{
 .dynamic-section {
   --section-block-size: max(400px, 100dvb);
   display: grid;
@@ -310,4 +310,5 @@
       opacity: 0;
     }
   }
+}
 }

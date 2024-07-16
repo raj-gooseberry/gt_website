@@ -4,7 +4,7 @@ import UpScroll from './UpScroll';
 
 const Footer2 = () => {
   return (
-    <div className="w-full min-h-screen flex items-center justify-center bg-black">
+    <div className="w-full min-h-screen flex items-center justify-center bg-black z-10">
       <div className="md:w-2/3 w-full px-4 text-white flex flex-col">
         <div className="w-full text-5xl font-bold">
           <h2 className="md:w-full sm:w-2/3">How can we help you. get in touch</h2>

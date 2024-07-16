@@ -19,7 +19,7 @@
   body > * {
     filter: blur(4px);
   } */
-  
+  .glitchSection{
   .container {
     display: flex;
     flex-direction: column;
@@ -258,4 +258,4 @@
     animation: none;
     transform: translate(0,0);
   }
-  
+}

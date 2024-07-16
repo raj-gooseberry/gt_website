@@ -1,4 +1,4 @@
-/* .events-page { */
+.events-page {
   .overflow-hidden {
     overflow: hidden !important;
     position: fixed;
@@ -29,7 +29,7 @@
   }
 
   .event::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -55,19 +55,19 @@
   }
 
   #section1 {
-    background-image: url("https://www.yudiz.com/codepen/studio-r/bg-living.jpg");
+    background-image: url('https://www.yudiz.com/codepen/studio-r/bg-living.jpg');
   }
 
   #section2 {
-    background-image: url("https://www.yudiz.com/codepen/studio-r/bg-kitchen.jpg");
+    background-image: url('https://www.yudiz.com/codepen/studio-r/bg-kitchen.jpg');
   }
 
   #section3 {
-    background-image: url("https://www.yudiz.com/codepen/studio-r/bg-badroom.jpg");
+    background-image: url('https://www.yudiz.com/codepen/studio-r/bg-badroom.jpg');
   }
 
   #section4 {
-    background-image: url("https://www.yudiz.com/codepen/studio-r/bg-office.jpg");
+    background-image: url('https://www.yudiz.com/codepen/studio-r/bg-office.jpg');
   }
 
   .image {
@@ -78,8 +78,12 @@
     position: absolute;
     background-size: cover;
     background-position: center center;
-    transition: width 1s, height 1s;
-    -webkit-transition: width 1s, height 1s;
+    transition:
+      width 1s,
+      height 1s;
+    -webkit-transition:
+      width 1s,
+      height 1s;
     box-shadow: 2px 2px 10px 10px rgb(0 0 0 / 12%);
     -webkit-box-shadow: 2px 2px 10px 10px rgb(0 0 0 / 12%);
     transform-origin: center;
@@ -112,15 +116,15 @@
   }
 
   #section2 .image {
-    background-image: url("https://www.yudiz.com/codepen/studio-r/bg-kitchen.jpg");
+    background-image: url('https://www.yudiz.com/codepen/studio-r/bg-kitchen.jpg');
   }
 
   #section3 .image {
-    background-image: url("https://www.yudiz.com/codepen/studio-r/bg-badroom.jpg");
+    background-image: url('https://www.yudiz.com/codepen/studio-r/bg-badroom.jpg');
   }
 
   #section4 .image {
-    background-image: url("https://www.yudiz.com/codepen/studio-r/bg-office.jpg");
+    background-image: url('https://www.yudiz.com/codepen/studio-r/bg-office.jpg');
   }
 
   /* Section Text */
@@ -177,7 +181,7 @@
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    font-family: "Titillium Web", sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     text-align: center;
     text-transform: uppercase;
     -webkit-text-transform: uppercase;
@@ -322,74 +326,75 @@
       -webkit-transform: translate(0%, -25%);
     }
   }
-/* } */
+  /* } */
 
-@keyframes moveUp {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
+  @keyframes moveUp {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
   }
 
-  100% {
-    transform: translateY(-100px);
-    opacity: 0;
-  }
-}
+  @-webkit-keyframes moveUp {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
 
-@-webkit-keyframes moveUp {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(-100px);
-    opacity: 0;
-  }
-}
-
-@keyframes scrollup {
-  100% {
-    transform: translateY(-54px);
-  }
-}
-
-@-webkit-keyframes scrollup {
-  100% {
-    transform: translateY(-54px);
-  }
-}
-
-@keyframes moveUpAgain {
-  0% {
-    transform: translateY(-54px);
-    opacity: 1;
+    100% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
   }
 
-  60% {
-    transform: translateY(-54px);
-    opacity: 1;
+  @keyframes scrollup {
+    100% {
+      transform: translateY(-54px);
+    }
   }
 
-  100% {
-    transform: translateY(-60px);
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes moveUpAgain {
-  0% {
-    transform: translateY(-54px);
-    opacity: 1;
+  @-webkit-keyframes scrollup {
+    100% {
+      transform: translateY(-54px);
+    }
   }
 
-  60% {
-    transform: translateY(-54px);
-    opacity: 1;
+  @keyframes moveUpAgain {
+    0% {
+      transform: translateY(-54px);
+      opacity: 1;
+    }
+
+    60% {
+      transform: translateY(-54px);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(-60px);
+      opacity: 0;
+    }
   }
 
-  100% {
-    transform: translateY(-60px);
-    opacity: 0;
+  @-webkit-keyframes moveUpAgain {
+    0% {
+      transform: translateY(-54px);
+      opacity: 1;
+    }
+
+    60% {
+      transform: translateY(-54px);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(-60px);
+      opacity: 0;
+    }
   }
 }

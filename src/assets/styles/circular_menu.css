@@ -1,3 +1,4 @@
+.iq-features{
 .holderCircle {
     width: 500px;
     height: 500px;
@@ -198,4 +199,4 @@
   @media only screen and (min-width: 992px) and (max-width: 1199px) {}
   
   @media only screen and (min-width: 1200px) and (max-width: 1499px) {}
-  
+}

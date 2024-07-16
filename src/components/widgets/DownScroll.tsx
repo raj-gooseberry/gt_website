@@ -28,7 +28,7 @@ const DownScroll = () => {
   }, []);
 
   return (
-    <div className='down-scroll'>
+    <div className='down-scroll downScroll'>
       <section id="section10" className="demo">
         <a href="#home">
           <span></span> scroll

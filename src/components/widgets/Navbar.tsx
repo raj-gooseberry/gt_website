@@ -3,7 +3,7 @@ import '../../assets/styles/navbar.css';
 
 const Navbar = () => {
   return (
-    <nav className="sticky navbar"> 
+    <nav className="sticky navbar">
       <div className="brand  display__logo">
         <a href="#top" className="nav__link">
           <span className="logo">Gooseberry Technovision</span>
